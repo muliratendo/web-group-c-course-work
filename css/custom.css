@@ -86,23 +86,3 @@ body {
     margin: 0.25rem 0;
 }
 
-@media (max-width: 720px) {
-    .reviews {
-        justify-content: flex-start;
-        overflow-x: auto;
-    }
-
-    .review-card {
-        flex: 0 0 85%;
-        min-width: 260px;
-    }
-}
-
-.qr-section {
-    text-align: center;
-    margin: 40px 0;
-}
-
-.qr-section img {
-    width: 150px;
-}
