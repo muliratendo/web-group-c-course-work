@@ -1,112 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nkozi Tours</title>
+    <link rel="stylesheet" href="https://muliratendo.github.io/web-group-c-course-work/css/blog.css">
     <link rel="stylesheet" href="https://muliratendo.github.io/web-group-c-course-work/css/main.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <style>
-        section{
+        section {
             padding: 60px 0;
         }
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
-            padding: 20px;
-        }
-        .counter-review-card {
-            display: flex;
-            flex-direction: row; /* keep items in a row */
-            justify-content: flex-start; /* let margins control spacing */
-            align-items: flex-start;
-            flex-wrap: wrap; /* allow wrapping on small screens */
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            max-width: 1200px;
-            margin: auto;
-        }
-        .fitting {
-            padding: 10px;
-            margin: 10px; /* 10px margin between each flex item */
-        }
-        .picture {
-            width: 30px;
-            height: 30px;
-        }
-        .one{
-            width: 300px;
-            height: auto;
-        }
-        .two{
-            width: 280px;
-
-        }
-        .three{
-            width: 280px;
-        }
-        .main-image {
-            width: 280px;
-            height: 500px;
-            border-radius: 8px;
-        }
-        /* Reviews layout: postcards in a horizontal row */
-    .reviews {
-      display: flex;
-      gap: 1.25rem;
-      align-items: stretch;
-      flex-wrap: wrap;
-      margin: 0 -0.5rem;
-      padding-bottom: 0.5rem;
-    }
-    .review-card {
-      background: #fff;
-      border-radius: 12px;
-      padding: 1rem;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-      border: 1px solid rgba(0,0,0,0.06);
-      flex: 0 0 320px;
-      margin: 0.5rem;
-      display: flex;
-      flex-direction: column;
-      box-shadow: 0 12px 28px rgba(0,0,0,0.12);
-      justify-content: space-between;
-      transition: transform 0.18s ease, box-shadow 0.18s ease;
-    }
-    .review-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 12px 28px rgba(0,0,0,0.12);
-    }
-    .review-card h5 { margin-bottom: 0.25rem; }
-    .review-card p.meta { color: #f6b91e; margin: 0.25rem 0; }
-    @media (max-width: 720px) {
-      .reviews { justify-content: flex-start; overflow-x: auto; }
-      .review-card { flex: 0 0 85%; min-width: 260px; }
-    }
-    .qr-section {
-      text-align: center;
-      margin: 40px 0;
-    }
-    .qr-section img {
-      width: 150px;
-    }
     </style>
 </head>
+
 <body class="bg-dark">
     <!-- nav-bar -->
     <nav class="navbar navbar-expand-md navbar-light bg-light rounded-2 m-1">
         <div class="container-fluid">
             <a class="navbar-brand active" aria-current="page" href="#">Nkozi Tours</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end align-center" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="https://muliratendo.github.io/web-group-c-course-work/assets/services/services.html">Services</a>
+                        <a class="nav-link"
+                            href="https://muliratendo.github.io/web-group-c-course-work/assets/services/services.html">Services</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -114,28 +37,38 @@
                             About Us
                         </a>
                         <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item bg-light" href="https://muliratendo.github.io/web-group-c-course-work/assets/about-us/about-us.html">About Us</a></li>
-                            <li><a class="dropdown-item bg-light" href="https://muliratendo.github.io/web-group-c-course-work/assets/blog/blog.html">Blog</a></li>
+                            <li><a class="dropdown-item bg-light"
+                                    href="https://muliratendo.github.io/web-group-c-course-work/assets/about-us/about-us.html">About
+                                    Us</a></li>
+                            <li><a class="dropdown-item bg-light"
+                                    href="https://muliratendo.github.io/web-group-c-course-work/assets/blog/blog.html">Blog</a>
+                            </li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item bg-light" href="https://muliratendo.github.io/web-group-c-course-work/assets/contact-help/contact-help.html">Get in touch with us</a></li>
+                            <li><a class="dropdown-item bg-light"
+                                    href="https://muliratendo.github.io/web-group-c-course-work/assets/contact-help/contact-help.html">Get
+                                    in touch with us</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://muliratendo.github.io/web-group-c-course-work/assets/signup-login/login/login.html">Sign in</a>
+                        <a class="nav-link"
+                            href="https://muliratendo.github.io/web-group-c-course-work/assets/signup-login/login/login.html">Sign
+                            in</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://muliratendo.github.io/web-group-c-course-work/assets/checkout/checkout.html">Check Out</a>
+                        <a class="nav-link"
+                            href="https://muliratendo.github.io/web-group-c-course-work/assets/checkout/checkout.html">Check
+                            Out</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    
+
     <!-- main -->
     <!--begin carousel-->
-    
+
     <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -147,268 +80,334 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="https://muliratendo.github.io/web-group-c-course-work/assets/images/blog/bec.jpg" class="d-block w-100" alt="...">
+                <img src="https://muliratendo.github.io/web-group-c-course-work/assets/images/blog/bec.jpg"
+                    class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block text-black">
                     <h5>BEAUTIFUL BEACHES OF MOMBASA</h5>
                     <p>Ellegant views as you watch the sea waters</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="https://muliratendo.github.io/web-group-c-course-work/assets/images/blog/fal.jpg" class="d-block w-100" alt="...">
+                <img src="https://muliratendo.github.io/web-group-c-course-work/assets/images/blog/fal.jpg"
+                    class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block text-black">
                     <h5>MURCHISON FALLS</h5>
                     <p> Come and enjoy the rapids.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="https://muliratendo.github.io/web-group-c-course-work/assets/images/blog/anml.jpg" class="d-block w-100" alt="...">
+                <img src="https://muliratendo.github.io/web-group-c-course-work/assets/images/blog/anml.jpg"
+                    class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block ">
                     <h5>SITES FROM THE FOREST RESERVES</h5>
                     <p>Smile with the beautiful wildlife.</p>
                 </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
     </div>
     <!--end carousel-->
-    
-    
-    
-    <h1>OUR HOURABLE SITE REVIEWS</h1>
-    
-    <div class="counter-review-card my-3 bg-light">
-        <div class="fitting w-100" id="one">
-            <img src="https://muliratendo.github.io/web-group-c-course-work/assets/images/blog/gorilla.jpg" alt="Logo" class="main-image w-100">
-        </div>
-        <div class="fitting" id="two">
-            <h2>GORILLA TRACKING IN UGANDA</h2>
-            <p>Okay my friend, let me tell you small story about gorilla tracking in Uganda. I am a tour guide here, and I
-                take
-                visitors to see the mountain gorillas in Bwindi or Mgahinga forest. It is very special experience, I tell
-                you.
-                We start early in the morning. You must have your permit, and wear good shoes because the forest is thick
-                and
-                sometimes we walk for long. But don’t worry, we go slowly. The trackers go ahead and find where the gorillas
-                are. When
-                we reach them, you will see..eh! It is amazing. The gorillas are big, strong, but very peaceful. Sometimes
-                the babies
-                play, and the silverback just watches us.
-                We stay with them for one hour only. You take photos, but no flash. We keep quiet and respect them. Many
-                tourists say
-                it is the best thing they ever did. Me, I feel proud to show people our beautiful nature and these gentle
-                giants.
-                So if you come to Uganda, please come for gorilla tracking. You will never forget it.
-            </p>
-            <a href="#" class="btn btn-warning">Book now</a>
-        </div>
-    
-        <div class="reviews">
-            <div class="review-card bg-dark">
-                <h5>Carol Fisher <small class="text-muted">(10 minutes ago)</small></h5>
-                <p class="meta">★★★★★</p>
-                <p>Tracking gorillas in Bwindi was unforgettable. The hike was tough but worth it. Seeing the gorillas up
-                    close, especially the babies playing, was magical. The guides were great and made the experience safe
-                    and respectful.</p>
+
+    <section id="blog" class="m-md-5 p-md-5 p-xl-8 rounded-3">
+        <h1 class="text-center">OUR HOURABLE SITE REVIEWS</h1>
+
+        <div class="counter-review-card my-3 bg-light">
+            <div class="fitting w-100" id="one">
+                <img src="https://muliratendo.github.io/web-group-c-course-work/assets/images/blog/gorilla.jpg"
+                    alt="Logo" class="main-image w-100">
             </div>
-    
-            <div class="review-card bg-dark">
-                <h5>Kathleen Tone <small class="text-muted">(10 minutes ago)</small></h5>
-                <p class="meta">★★★★★</p>
-                <p>Gorilla trekking in Uganda was magical. After a few hours of hiking, we found a peaceful gorilla family.
-                    A young one came close, which was thrilling. The rangers were amazing and taught us so much.</p>
-            </div>
-    
-            <div class="review-card bg-dark">
-                <h5>Mary Rojas <small class="text-muted">(10 minutes ago)</small></h5>
-                <p class="meta">★★★★★</p>
-                <div class="text-warning">
-                    <i class="bi bi-star-fill"></i>
-                </div>
-                <p>My gorilla tracking trip in Uganda exceeded expectations. The forest was beautiful, and seeing a baby
-                    gorilla with its mother was heartwarming. I left with deep respect for these animals and their
-                    protectors</p>
-            </div>
-        </div>
-    </div>
-    
-    <div class="counter-review-card my-3 bg-light">
-        <div class="fitting w-100" id="one">
-            <img src="https://muliratendo.github.io/web-group-c-course-work/assets/images/blog/momba.jpg" alt="Logo" class="main-image w-100">
-        </div>
-        <div class="fitting" id="two">
-            <h2>VISIT THE KENYAN COAST</h2>
-            <p>Okay my friend, let me tell you about our beautiful Kenyan coast. I am a tour guide here, and I love to show
-                people
-                this amazing place.
-                When you come to the coast, you will see the Indian Ocean,very blue and warm. The beaches are white and
-                soft, like
-                powder. We have places like Diani, Mombasa, Malindi, and Lamu. Many tourists come to relax, swim, and enjoy
-                the sun.At night, the mosquitoes party harder than the tourists,but they don’t pay entrance fee
-                Also, we have rich culture here. You can visit Fort Jesus in Mombasa, very old and full of history. You can
-                walk in
-                Old Town, see the Swahili houses, eat pilau, samaki, and drink madafu coconut water. People here are very
-                friendly and
-                love to say “Karibu” you are welcome.
-                If you like boats, you can go on a dhow ride, or snorkel and see fish and coral. In Lamu, life is slow and
-                peaceful,
-                with donkeys and narrow streets. It is like going back in time.
-                So, if you want to relax and enjoy nature, culture, and good food, come to the Kenyan coast. You will love
-                it.
-            </p>
-            <a href="#" class="btn btn-warning">Book now</a>
-        </div>
-    
-        <div class="reviews">
-            <div class="review-card bg-dark">
-                <h5>Christopher Columbus <small class="text-muted">(10 minutes ago)</small></h5>
-                <p class="meta">★★★★★</p>
-                <p>The beaches in Diani are absolutely stunning—white sand, clear water, and peaceful vibes. It felt like
-                    paradise.</p>
-            </div>
-    
-            <div class="review-card bg-dark">
-                <h5>Zheng He <small class="text-muted">(10 minutes ago)</small></h5>
-                <p class="meta">★★★★★</p>
-                <p>Getting to some of the beaches was a hassle. The roads were rough and the traffic in Mombasa was crazy.
+            <div class="fitting" id="two">
+                <h2>GORILLA TRACKING IN UGANDA</h2>
+                <p>Okay my friend, let me tell you small story about gorilla tracking in Uganda. I am a tour guide here,
+                    and I
+                    take
+                    visitors to see the mountain gorillas in Bwindi or Mgahinga forest. It is very special experience, I
+                    tell
+                    you.
+                    We start early in the morning. You must have your permit, and wear good shoes because the forest is
+                    thick
+                    and
+                    sometimes we walk for long. But don’t worry, we go slowly. The trackers go ahead and find where the
+                    gorillas
+                    are. When
+                    we reach them, you will see..eh! It is amazing. The gorillas are big, strong, but very peaceful.
+                    Sometimes
+                    the babies
+                    play, and the silverback just watches us.
+                    We stay with them for one hour only. You take photos, but no flash. We keep quiet and respect them.
+                    Many
+                    tourists say
+                    it is the best thing they ever did. Me, I feel proud to show people our beautiful nature and these
+                    gentle
+                    giants.
+                    So if you come to Uganda, please come for gorilla tracking. You will never forget it.
                 </p>
+                <a href="#" class="btn btn-warning">Book now</a>
             </div>
-    
-            <div class="review-card bg-dark">
-                <h5>Bear Grylls<small class="text-muted">(10 minutes ago)</small></h5>
-                <p class="meta">★★★★★</p>
-                <div class="text-warning">
-                    <i class="bi bi-star-fill"></i>
+
+            <div class="reviews">
+                <div class="review-card bg-dark">
+                    <h5>Carol Fisher <small class="text-muted">(10 minutes ago)</small></h5>
+                    <p class="meta">★★★★★</p>
+                    <p>Tracking gorillas in Bwindi was unforgettable. The hike was tough but worth it. Seeing the
+                        gorillas up
+                        close, especially the babies playing, was magical. The guides were great and made the experience
+                        safe
+                        and respectful.</p>
                 </div>
-                <p>I loved the Swahili culture in Lamu. The architecture, the food, and the dhow rides made it feel so
-                    authentic</p>
-            </div>
-        </div>
-    </div>
-    <div class="counter-review-card my-3 bg-light">
-        <div class="fitting w-100" id="one">
-            <img src="https://muliratendo.github.io/web-group-c-course-work/assets/images/blog/kilim.jpg" alt="Logo" class="main-image w-100">
-        </div>
-        <div class="fitting" id="two">
-            <h2>THE AMAZING MOUNTAIN VIEWS FROM TANZANIA</h2>
-            <p>Okay rafiki yangu (my friend), let me tell you about our beautiful mountains here in Tanzania. I am a local
-                tour
-                guide, and I love to take visitors to see these amazing places.
-                We have big mountains, small mountains, and all of them are full of beauty. The most famous one is Mount
-                Kilimanjaro eh, that one is the roof of Africa! It is very tall, with snow on top, even though we are in
-                Africa. Many
-                tourists come to climb it. Some reach the top, some don’t, but all enjoy the journey. It is not easy, but
-                very
-                special.
-                We also have Mount Meru, near Arusha. It is smaller than Kilimanjaro but still strong and beautiful. You can
-                see
-                animals when you hike there giraffes, monkeys, even buffalo. The view from the top is wow!
-                In the south, we have Udzungwa Mountains. These are full of green forest, waterfalls, and birds. It is good
-                for people
-                who love nature and walking in quiet places.
-                Our mountains are not just rocks they are full of stories, culture, and life. When you come, we walk
-                together, we
-                talk, we laugh, and you see the heart of Tanzania.
-                Karibu sana! You are very welcome.
-            </p>
-            <a href="#" class="btn btn-warning">Book now</a>
-        </div>
-    
-        <div class="reviews">
-            <div class="review-card bg-dark">
-                <h5>Anthony Bourdain<small class="text-muted">(10 minutes ago)</small></h5>
-                <p class="meta">★★★★★</p>
-                <p>Climbing Kilimanjaro was the hardest thing I’ve ever done,but the sunrise at the summit made every step
-                    worth it. Absolutely magical</p>
-            </div>
-    
-            <div class="review-card bg-dark">
-                <h5>Jessica Nabongo<small class="text-muted">(10 minutes ago)</small></h5>
-                <p class="meta">★★★★★</p>
-                <p>Mount Meru surprised me with its beauty and wildlife. Seeing giraffes on the trail was an unforgettable
-                    bonus</p>
-            </div>
-    
-            <div class="review-card bg-dark">
-                <h5>Rick Steves<small class="text-muted">(10 minutes ago)</small></h5>
-                <p class="meta">★★★★★</p>
-                <div class="text-warning">
-                    <i class="bi bi-star-fill"></i>
+
+                <div class="review-card bg-dark">
+                    <h5>Kathleen Tone <small class="text-muted">(10 minutes ago)</small></h5>
+                    <p class="meta">★★★★★</p>
+                    <p>Gorilla trekking in Uganda was magical. After a few hours of hiking, we found a peaceful gorilla
+                        family.
+                        A young one came close, which was thrilling. The rangers were amazing and taught us so much.</p>
                 </div>
-                <p>The Usambara Mountains were a hidden gem-lush, peaceful, and full of charm. I felt like I was walking
-                    through a dream.</p>
+
+                <div class="review-card bg-dark">
+                    <h5>Mary Rojas <small class="text-muted">(10 minutes ago)</small></h5>
+                    <p class="meta">★★★★★</p>
+                    <div class="text-warning">
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <p>My gorilla tracking trip in Uganda exceeded expectations. The forest was beautiful, and seeing a
+                        baby
+                        gorilla with its mother was heartwarming. I left with deep respect for these animals and their
+                        protectors</p>
+                </div>
             </div>
         </div>
-    </div>
+
+        <div class="counter-review-card my-3 bg-light">
+            <div class="fitting w-100" id="one">
+                <img src="https://muliratendo.github.io/web-group-c-course-work/assets/images/blog/momba.jpg" alt="Logo"
+                    class="main-image w-100">
+            </div>
+            <div class="fitting" id="two">
+                <h2>VISIT THE KENYAN COAST</h2>
+                <p>Okay my friend, let me tell you about our beautiful Kenyan coast. I am a tour guide here, and I love
+                    to show
+                    people
+                    this amazing place.
+                    When you come to the coast, you will see the Indian Ocean,very blue and warm. The beaches are white
+                    and
+                    soft, like
+                    powder. We have places like Diani, Mombasa, Malindi, and Lamu. Many tourists come to relax, swim,
+                    and enjoy
+                    the sun.At night, the mosquitoes party harder than the tourists,but they don’t pay entrance fee
+                    Also, we have rich culture here. You can visit Fort Jesus in Mombasa, very old and full of history.
+                    You can
+                    walk in
+                    Old Town, see the Swahili houses, eat pilau, samaki, and drink madafu coconut water. People here are
+                    very
+                    friendly and
+                    love to say “Karibu” you are welcome.
+                    If you like boats, you can go on a dhow ride, or snorkel and see fish and coral. In Lamu, life is
+                    slow and
+                    peaceful,
+                    with donkeys and narrow streets. It is like going back in time.
+                    So, if you want to relax and enjoy nature, culture, and good food, come to the Kenyan coast. You
+                    will love
+                    it.
+                </p>
+                <a href="#" class="btn btn-warning">Book now</a>
+            </div>
+
+            <div class="reviews">
+                <div class="review-card bg-dark">
+                    <h5>Christopher Columbus <small class="text-muted">(10 minutes ago)</small></h5>
+                    <p class="meta">★★★★★</p>
+                    <p>The beaches in Diani are absolutely stunning—white sand, clear water, and peaceful vibes. It felt
+                        like
+                        paradise.</p>
+                </div>
+
+                <div class="review-card bg-dark">
+                    <h5>Zheng He <small class="text-muted">(10 minutes ago)</small></h5>
+                    <p class="meta">★★★★★</p>
+                    <p>Getting to some of the beaches was a hassle. The roads were rough and the traffic in Mombasa was
+                        crazy.
+                    </p>
+                </div>
+
+                <div class="review-card bg-dark">
+                    <h5>Bear Grylls<small class="text-muted">(10 minutes ago)</small></h5>
+                    <p class="meta">★★★★★</p>
+                    <div class="text-warning">
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <p>I loved the Swahili culture in Lamu. The architecture, the food, and the dhow rides made it feel
+                        so
+                        authentic</p>
+                </div>
+            </div>
+        </div>
+        <div class="counter-review-card my-3 bg-light">
+            <div class="fitting w-100" id="one">
+                <img src="https://muliratendo.github.io/web-group-c-course-work/assets/images/blog/kilim.jpg" alt="Logo"
+                    class="main-image w-100">
+            </div>
+            <div class="fitting" id="two">
+                <h2>THE AMAZING MOUNTAIN VIEWS FROM TANZANIA</h2>
+                <p>Okay rafiki yangu (my friend), let me tell you about our beautiful mountains here in Tanzania. I am a
+                    local
+                    tour
+                    guide, and I love to take visitors to see these amazing places.
+                    We have big mountains, small mountains, and all of them are full of beauty. The most famous one is
+                    Mount
+                    Kilimanjaro eh, that one is the roof of Africa! It is very tall, with snow on top, even though we
+                    are in
+                    Africa. Many
+                    tourists come to climb it. Some reach the top, some don’t, but all enjoy the journey. It is not
+                    easy, but
+                    very
+                    special.
+                    We also have Mount Meru, near Arusha. It is smaller than Kilimanjaro but still strong and beautiful.
+                    You can
+                    see
+                    animals when you hike there giraffes, monkeys, even buffalo. The view from the top is wow!
+                    In the south, we have Udzungwa Mountains. These are full of green forest, waterfalls, and birds. It
+                    is good
+                    for people
+                    who love nature and walking in quiet places.
+                    Our mountains are not just rocks they are full of stories, culture, and life. When you come, we walk
+                    together, we
+                    talk, we laugh, and you see the heart of Tanzania.
+                    Karibu sana! You are very welcome.
+                </p>
+                <a href="#" class="btn btn-warning">Book now</a>
+            </div>
+
+            <div class="reviews">
+                <div class="review-card bg-dark">
+                    <h5>Anthony Bourdain<small class="text-muted">(10 minutes ago)</small></h5>
+                    <p class="meta">★★★★★</p>
+                    <p>Climbing Kilimanjaro was the hardest thing I’ve ever done,but the sunrise at the summit made
+                        every step
+                        worth it. Absolutely magical</p>
+                </div>
+
+                <div class="review-card bg-dark">
+                    <h5>Jessica Nabongo<small class="text-muted">(10 minutes ago)</small></h5>
+                    <p class="meta">★★★★★</p>
+                    <p>Mount Meru surprised me with its beauty and wildlife. Seeing giraffes on the trail was an
+                        unforgettable
+                        bonus</p>
+                </div>
+
+                <div class="review-card bg-dark">
+                    <h5>Rick Steves<small class="text-muted">(10 minutes ago)</small></h5>
+                    <p class="meta">★★★★★</p>
+                    <div class="text-warning">
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <p>The Usambara Mountains were a hidden gem-lush, peaceful, and full of charm. I felt like I was
+                        walking
+                        through a dream.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- main -->
-    
-
-
 
     <!-- footer -->
     <footer class="bg-light text-white pt-5 pb-3">
-        <div class="container-md">
+        <div class="container-fluid">
             <div class="row g-4 mb-4">
-    
+
                 <!-- logo and Social media handles -->
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-2 col-md-6">
                     <h5 id="logo" class="mb-3 text-white">Nkozi Tours</h5>
                     <p class="text-muted small">Ignite your sense of adventure with Uganda.</p>
                     <div class="d-flex gap-3 mt-4">
-                        <a href="https://www.linkedin.com/" class="text-Primary" aria-label="Follow us on LinkedIn"><i class="bi bi-linkedin fs-5"></i></a>
-                        <a href="https://x.com/" class="text-primary" aria-label="Follow us on Twitter"><i class="bi bi-twitter fs-5"></i></a>
-                        <a href="https://www.instagram.com/" class="text-Primary" aria-label="Follow us on Instagram"><i class="bi bi-instagram fs-5"></i></a>
+                        <a href="https://www.linkedin.com/" class="text-Primary" aria-label="Follow us on LinkedIn"><i
+                                class="bi bi-linkedin fs-5"></i></a>
+                        <a href="https://x.com/" class="text-primary" aria-label="Follow us on Twitter"><i
+                                class="bi bi-twitter fs-5"></i></a>
+                        <a href="https://www.instagram.com/" class="text-Primary" aria-label="Follow us on Instagram"><i
+                                class="bi bi-instagram fs-5"></i></a>
                     </div>
                 </div>
-    
+
                 <!-- Product -->
                 <div class="col-lg-2 col-md-6">
                     <h6 class="fw-bold text-white mb-3">Services</h6>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="https://muliratendo.github.io/web-group-c-course-work/assets/services/services.html#transport" class="text-muted text-decoration-none small">Transport</a></li>
-                        <li class="mb-2"><a href="https://muliratendo.github.io/web-group-c-course-work/assets/services/services.html#accomodation" class="text-muted text-decoration-none small">Accommodation</a></li>
-                        <li class="mb-2"><a href="https://muliratendo.github.io/web-group-c-course-work/assets/services/services.html#tour-planner" class="text-muted text-decoration-none small">Tour Planner</a></li>
+                        <li class="mb-2"><a href="./assets/services/services.html#transport"
+                                class="text-muted text-decoration-none small">Transport</a></li>
+                        <li class="mb-2"><a href="./assets/services/services.html#accomodation"
+                                class="text-muted text-decoration-none small">Accommodation</a></li>
+                        <li class="mb-2"><a href="./assets/services/services.html#tour-planner"
+                                class="text-muted text-decoration-none small">Tour Planner</a></li>
                     </ul>
                 </div>
-    
+
                 <!-- Resources -->
                 <div class="col-lg-2 col-md-6">
                     <h6 class="fw-bold text-white mb-3">Blog</h6>
-                    <ul class="list-unstyled"> 
-                        <li class="mb-2"><a href="https://muliratendo.github.io/web-group-c-course-work/assets/blog/blog.html#reviews" class="text-muted text-decoration-none small">Reviews</a></li>
-                        <li class="mb-2"><a href="https://muliratendo.github.io/web-group-c-course-work/assets/blog/blog.html#Gallery" class="text-muted text-decoration-none small">Gallery</a></li>
-                        <li class="mb-2"><a href="https://muliratendo.github.io/web-group-c-course-work/assets/blog/blog.html#blog" class="text-muted text-decoration-none small">Blog</a></li>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="./assets/blog/blog.html#reviews"
+                                class="text-muted text-decoration-none small">Reviews</a></li>
+                        <li class="mb-2"><a href="./assets/blog/blog.html#Gallery"
+                                class="text-muted text-decoration-none small">Gallery</a></li>
+                        <li class="mb-2"><a href="./assets/blog/blog.html#blog"
+                                class="text-muted text-decoration-none small">Blog</a></li>
                     </ul>
                 </div>
-    
+
                 <!-- Company -->
                 <div class="col-lg-2 col-md-6">
                     <h6 class="fw-bold text-white mb-3">About Us</h6>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="https://muliratendo.github.io/web-group-c-course-work/assets/contact-help/contact-help.html#contact-info" class="text-muted text-decoration-none small">Contact Us</a>
+                        <li class="mb-2"><a href="./assets/contact-help/contact-help.html#contact-info"
+                                class="text-muted text-decoration-none small">Contact Us</a>
                         </li>
-                        <li class="mb-2"><a href="https://muliratendo.github.io/web-group-c-course-work/assets/about-us/about-us.html#meet-the-team" class="text-muted text-decoration-none small">Meet the Team</a></li>
-                        <li class="mb-2"><a href="https://muliratendo.github.io/web-group-c-course-work/assets/contact-help/contact-help.html#help" class="text-muted text-decoration-none small">Help Center</a></li>
+                        <li class="mb-2"><a href="./assets/about-us/about-us.html#meet-the-team"
+                                class="text-muted text-decoration-none small">Meet the Team</a></li>
+                        <li class="mb-2"><a href="./assets/contact-help/contact-help.html#help"
+                                class="text-muted text-decoration-none small">Help Center</a></li>
                     </ul>
                 </div>
-    
+
                 <!-- Login and Checkout -->
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-2 col-md-6">
                     <h6 class="fw-bold text-white mb-3">Login and Checkout</h6>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="https://muliratendo.github.io/web-group-c-course-work/assets/checkout/checkout.html#payment-method" class="text-muted text-decoration-none small">Payment and Checkout</a></li>
+                        <li class="mb-2"><a href="./assets/checkout/checkout.html#payment-method"
+                                class="text-muted text-decoration-none small">Payment and Checkout</a></li>
                     </ul>
-                    <a href="#contact" class="btn btn-sm btn-outline-secondary mt-3">Login</a>
+                    <a href="./assets/signup-login/login/login.html#login"
+                        class="btn btn-sm btn-outline-secondary mt-2">Login</a>
+                </div>
+
+                <!-- Creator Details -->
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="fw-bold text-white mb-3">Creator Details</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <p class="text-muted text-decoration-none small">Name: All Members</p>
+                        </li>
+                        <li class="mb-2">
+                            <p class="text-muted text-decoration-none small">Reg No.: 2025-xxxx-xxxx</p>
+                        </li>
+                        <li class="mb-2">
+                            <p class="text-muted text-decoration-none small">Prog: Faculty of Science</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
-    
+
             <hr class="text-muted">
             <!-- Copyright -->
             <div class="row pt-3">
@@ -418,7 +417,8 @@
                     </p>
                     <p class="text-muted small fw-bold mt-2">
                         **Disclaimer:** This website and all its content (including company names, reviews, and
-                        contact information) are for **educational and portfolio purposes only** and represent a conceptual project. It
+                        contact information) are for **educational and portfolio purposes only** and represent a
+                        conceptual project. It
                         is not a real service and has no commercial function.
                     </p>
                 </div>
@@ -426,6 +426,9 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
