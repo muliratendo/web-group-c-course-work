@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 // custom varibles
 $primary: #2A1713;
 $secondary: #5C352C;
 $light: #E9B48A;
 $dark: #956959;
+$font-family-sans-serif:      system-ui, 'Montserrat', -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
 // import the functions and variables
 @import "../node_modules/bootstrap/scss/_functions";
