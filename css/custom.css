@@ -6,12 +6,9 @@ body {
 .counter-review-card {
     display: flex;
     flex-direction: row;
-    /* keep items in a row */
     justify-content: flex-start;
-    /* let margins control spacing */
     align-items: flex-start;
     flex-wrap: wrap;
-    /* allow wrapping on small screens */
     background: white;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -23,7 +20,7 @@ body {
 .fitting {
     padding: 10px;
     margin: 10px;
-    /* 10px margin between each flex item */
+    
 }
 
 .picture {
@@ -51,7 +48,6 @@ body {
     border-radius: 8px;
 }
 
-/* Reviews layout: postcards in a horizontal row */
 .reviews {
     display: flex;
     gap: 1.25rem;
@@ -78,7 +74,7 @@ body {
 
 .review-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.498);
 }
 
 .review-card h5 {
