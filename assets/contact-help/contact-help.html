@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +8,28 @@
     <link rel="stylesheet" href="https://muliratendo.github.io/web-group-c-course-work/css/main.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <style>
-        section{
+        section {
             padding: 60px 0;
         }
     </style>
 </head>
+
 <body class="bg-dark">
     <!-- nav-bar -->
     <nav class="navbar navbar-expand-md navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" aria-current="page" href="https://muliratendo.github.io/web-group-c-course-work/index.html">Nkozi Tours</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" aria-current="page"
+                href="https://muliratendo.github.io/web-group-c-course-work/index.html">Nkozi Tours</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end align-center" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="https://muliratendo.github.io/web-group-c-course-work/assets/services/services.html">Services</a>
+                        <a class="nav-link"
+                            href="https://muliratendo.github.io/web-group-c-course-work/assets/services/services.html">Services</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -32,7 +37,9 @@
                             About Us
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="https://muliratendo.github.io/web-group-c-course-work/assets/about-us/about-us.html">About Us</a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://muliratendo.github.io/web-group-c-course-work/assets/about-us/about-us.html">About
+                                    Us</a></li>
                             <li><a class="dropdown-item" href="./assets/blog/blog.html">Blog</a></li>
                             <li>
                                 <hr class="dropdown-divider">
@@ -41,89 +48,215 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://muliratendo.github.io/web-group-c-course-work/assets/signup-login/login/login.html">Sign in</a>
+                        <a class="nav-link"
+                            href="https://muliratendo.github.io/web-group-c-course-work/assets/signup-login/login/login.html">Sign
+                            in</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://muliratendo.github.io/web-group-c-course-work/assets/checkout/checkout.html">Check Out</a>
+                        <a class="nav-link"
+                            href="https://muliratendo.github.io/web-group-c-course-work/assets/checkout/checkout.html">Check
+                            Out</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    
+
     <!-- main -->
-    <!-- contact info -->
-    <section id="contact-info">
+    <section id="help" class="bg-light m-md-5 p-md-5 p-xl-8 rounded-3">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2>Get in touch</h2>
+                <p class="lead">Questions to ask? Fill out the form directly to contact us</p>
 
+            </div>
+            <div class="row jusfy-content-center">
+                <div class="col-lg-6 mx-auto">
+                    <form>
+                        <label for="email" class="form-label">Email address:</label>
+                        <div class="mb-4 input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-chat-left-dots-fill"></i>
+
+                            </span>
+                            <input type="email" class="form-control" id="email"
+                                placeholder="e.g. example@gmail.com"><br>
+
+                        </div>
+                        <label for="name" class="form-label">name</label><br>
+                        <input type="text" class="form-control" id="name" placeholder="Joe Doe"><br>
+
+                        <label for="subject" class="form-label">what is your question about?</label>
+                        <select class="form-select" id="subject">
+                            <option value="pricing" selected>Pricing query</option>
+                            <option value="content">Content query</option>
+                            <option value="other">Other queries</option>
+
+                        </select>
+                        <div class="form-floating mb-4 mt-5">
+                            <textarea id="query" class="form-control" style="height: 140px;"></textarea>
+                            <label for="query" class="form-label">Type your query here...</label><br>
+                        </div>
+                        <div class="mb-4 text-center">
+                            <button type="submit" class="btn btn-secondary">submit</button>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- help form -->
-    <section id="help">
+    <section id="FAQ" class="bg-light m-md-5 p-md-5 p-xl-8 rounded-3">
+        <div class="container-md text-center">
+            <!-- FAQ header -->
+            <h2>Frequently Asked Questions (FAQ)</h2>
+            <p class="lead text-muted">Everything you need to know about booking, tours, and travel in Uganda.</p>
+            <div class="row my-2 jusfy-content-around align-items-center">
+                <div class="col-8 mx-auto text-start">
+                    <!-- Start of FAQ -->
+                    <div class="accordion bg-dark" id="accordionExample">
+                        <!-- Chapter 1: Booking & Reservations -->
+                        <div class="accordion-item bg-light">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fw-bold bg-dark text-white" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    How do I book a tour with Nkozi Tours?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    You can book directly through our <strong>Services</strong> page by selecting your desired tour package, 
+                                    accommodation, or transport option and proceeding to the checkout. 
+                                    A confirmation email will be sent once payment is complete.
+                                </div>
+                            </div>
+                        </div>
 
-    </section>
+                        <!-- Chapter 2: Safety & Support-->
+                        <div class="accordion-item bg-light">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold bg-dark text-white" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    How do I get assistance if I have an issue during my trip?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    For immediate assistance, you can call the emergency contact number provided in your booking confirmation.
+                                     For non-urgent inquiries, please use the "Get in touch" form on this page, 
+                                    and our support team will respond as quickly as possible.
+                                </div>
+                            </div>
+                        </div>
 
-    <!-- FAQ -->
-    <section id="faq">
-        
+                        <!-- Chapter 3: Payment & Pricing -->
+                        <div class="accordion-item bg-light">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold bg-dark text-white" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    What payment methods do you accept?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                     We accept major credit/debit cards (Visa, MasterCard) and mobile money transfer options available in Uganda.
+                                     Full payment is generally required to secure your booking,
+                                     but check the specific tour's policy for details.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
     </section>
 
     <!-- footer -->
     <footer class="bg-light text-white pt-5 pb-3">
         <div class="container-md">
             <div class="row g-4 mb-4">
-    
+
                 <!-- logo and Social media handles -->
                 <div class="col-lg-3 col-md-6">
                     <h5 id="logo" class="mb-3 text-white">Nkozi Tours</h5>
                     <p class="text-muted small">Ignite your sense of adventure with Uganda.</p>
                     <div class="d-flex gap-3 mt-4">
-                        <a href="https://www.linkedin.com/" class="text-Primary" aria-label="Follow us on LinkedIn"><i class="bi bi-linkedin fs-5"></i></a>
-                        <a href="https://x.com/" class="text-primary" aria-label="Follow us on Twitter"><i class="bi bi-twitter fs-5"></i></a>
-                        <a href="https://www.instagram.com/" class="text-Primary" aria-label="Follow us on Instagram"><i class="bi bi-instagram fs-5"></i></a>
+                        <a href="https://www.linkedin.com/" class="text-Primary" aria-label="Follow us on LinkedIn"><i
+                                class="bi bi-linkedin fs-5"></i></a>
+                        <a href="https://x.com/" class="text-primary" aria-label="Follow us on Twitter"><i
+                                class="bi bi-twitter fs-5"></i></a>
+                        <a href="https://www.instagram.com/" class="text-Primary" aria-label="Follow us on Instagram"><i
+                                class="bi bi-instagram fs-5"></i></a>
                     </div>
                 </div>
-    
+
                 <!-- Product -->
                 <div class="col-lg-2 col-md-6">
                     <h6 class="fw-bold text-white mb-3">Services</h6>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="https://muliratendo.github.io/web-group-c-course-work/assets/services/services.html#transport" class="text-muted text-decoration-none small">Transport</a></li>
-                        <li class="mb-2"><a href="https://muliratendo.github.io/web-group-c-course-work/assets/services/services.html#accomodation" class="text-muted text-decoration-none small">Accommodation</a></li>
-                        <li class="mb-2"><a href="https://muliratendo.github.io/web-group-c-course-work/assets/services/services.html#tour-planner" class="text-muted text-decoration-none small">Tour Planner</a></li>
+                        <li class="mb-2"><a
+                                href="https://muliratendo.github.io/web-group-c-course-work/assets/services/services.html#transport"
+                                class="text-muted text-decoration-none small">Transport</a></li>
+                        <li class="mb-2"><a
+                                href="https://muliratendo.github.io/web-group-c-course-work/assets/services/services.html#accomodation"
+                                class="text-muted text-decoration-none small">Accommodation</a></li>
+                        <li class="mb-2"><a
+                                href="https://muliratendo.github.io/web-group-c-course-work/assets/services/services.html#tour-planner"
+                                class="text-muted text-decoration-none small">Tour Planner</a></li>
                     </ul>
                 </div>
-    
+
                 <!-- Resources -->
                 <div class="col-lg-2 col-md-6">
                     <h6 class="fw-bold text-white mb-3">Blog</h6>
-                    <ul class="list-unstyled"> 
-                        <li class="mb-2"><a href="https://muliratendo.github.io/web-group-c-course-work/assets/blog/blog.html#reviews" class="text-muted text-decoration-none small">Reviews</a></li>
-                        <li class="mb-2"><a href="https://muliratendo.github.io/web-group-c-course-work/assets/blog/blog.html#Gallery" class="text-muted text-decoration-none small">Gallery</a></li>
-                        <li class="mb-2"><a href="https://muliratendo.github.io/web-group-c-course-work/assets/blog/blog.html#blog" class="text-muted text-decoration-none small">Blog</a></li>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a
+                                href="https://muliratendo.github.io/web-group-c-course-work/assets/blog/blog.html#reviews"
+                                class="text-muted text-decoration-none small">Reviews</a></li>
+                        <li class="mb-2"><a
+                                href="https://muliratendo.github.io/web-group-c-course-work/assets/blog/blog.html#Gallery"
+                                class="text-muted text-decoration-none small">Gallery</a></li>
+                        <li class="mb-2"><a
+                                href="https://muliratendo.github.io/web-group-c-course-work/assets/blog/blog.html#blog"
+                                class="text-muted text-decoration-none small">Blog</a></li>
                     </ul>
                 </div>
-    
+
                 <!-- Company -->
                 <div class="col-lg-2 col-md-6">
                     <h6 class="fw-bold text-white mb-3">About Us</h6>
                     <ul class="list-unstyled">
-                        <li class="mb-2 active"><a href="https://muliratendo.github.io/web-group-c-course-work/assets/contact-help/contact-help.html#contact-info" class="text-muted text-decoration-none small">Contact Us</a>
+                        <li class="mb-2 active"><a
+                                href="https://muliratendo.github.io/web-group-c-course-work/assets/contact-help/contact-help.html#contact-info"
+                                class="text-muted text-decoration-none small">Contact Us</a>
                         </li>
-                        <li class="mb-2"><a href="https://muliratendo.github.io/web-group-c-course-work/assets/about-us/about-us.html#meet-the-team" class="text-muted text-decoration-none small">Meet the Team</a></li>
-                        <li class="mb-2 active"><a href="https://muliratendo.github.io/web-group-c-course-work/assets/contact-help/contact-help.html#help" class="text-muted text-decoration-none small">Help Center</a></li>
+                        <li class="mb-2"><a
+                                href="https://muliratendo.github.io/web-group-c-course-work/assets/about-us/about-us.html#meet-the-team"
+                                class="text-muted text-decoration-none small">Meet the Team</a></li>
+                        <li class="mb-2 active"><a
+                                href="https://muliratendo.github.io/web-group-c-course-work/assets/contact-help/contact-help.html#help"
+                                class="text-muted text-decoration-none small">Help Center</a></li>
                     </ul>
                 </div>
-    
+
                 <!-- Login and Checkout -->
                 <div class="col-lg-3 col-md-6">
                     <h6 class="fw-bold text-white mb-3">Login and Checkout</h6>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="https://muliratendo.github.io/web-group-c-course-work/assets/checkout/checkout.html#payment-method" class="text-muted text-decoration-none small">Payment and Checkout</a></li>
+                        <li class="mb-2"><a
+                                href="https://muliratendo.github.io/web-group-c-course-work/assets/checkout/checkout.html#payment-method"
+                                class="text-muted text-decoration-none small">Payment and Checkout</a></li>
                     </ul>
                     <a href="#contact" class="btn btn-sm btn-outline-secondary mt-3">Login</a>
                 </div>
             </div>
-    
+
             <hr class="text-muted">
             <!-- Copyright -->
             <div class="row pt-3">
@@ -133,7 +266,8 @@
                     </p>
                     <p class="text-muted small fw-bold mt-2">
                         **Disclaimer:** This website and all its content (including company names, reviews, and
-                        contact information) are for **educational and portfolio purposes only** and represent a conceptual project. It
+                        contact information) are for **educational and portfolio purposes only** and represent a
+                        conceptual project. It
                         is not a real service and has no commercial function.
                     </p>
                 </div>
@@ -141,6 +275,9 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
