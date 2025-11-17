@@ -86,3 +86,14 @@ body {
     margin: 0.25rem 0;
 }
 
+.divide-h {
+    width: 1px; --bs-bg-opacity: .7;
+}
+
+.divide-w {
+    height: 1px; --bs-bg-opacity: .7;
+}
+
+.pay-logo {
+    height: 15px;
+}
