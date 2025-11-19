@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nkozi Tours</title>
-    <link rel="icon" type="image/x-icon" href="https://muliratendo.github.io/web-group-c-course-work/assets/images/favicon.png">
+    <link rel="icon" type="image/x-icon"
+        href="https://muliratendo.github.io/web-group-c-course-work/assets/images/favicon.png">
     <link rel="stylesheet" href="https://muliratendo.github.io/web-group-c-course-work/css/custom.css">
     <link rel="stylesheet" href="https://muliratendo.github.io/web-group-c-course-work/css/main.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
@@ -68,7 +69,288 @@
     </nav>
 
     <!-- main -->
-    <section id="#payment-checkout" class="bg-light m-md-5 p-md-5 p-xl-8 rounded-3">
+
+    <section id="pricing">
+        <div class="container-md">
+            <!-- Pricing Header -->
+            <div class="row justify-content-center text-center my-5">
+                <div class="col-md-8">
+                    <h2>Start Your journey Today</h2>
+                    <p class="lead text-muted">
+                        Find the right plan for you.
+                    </p>
+                </div>
+            </div>
+
+            <!-- category Tabs -->
+            <ul class="nav nav-pills justify-content-center mb-4 g-3" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link btn btn-secondary mx-2 active" id="accomodation-tab" data-bs-toggle="tab"
+                        data-bs-target="#accomodation" type="button" role="tab" aria-controls="accomodation"
+                        aria-selected="true">Accommodation</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link btn btn-secondary mx-2" id="transport-tab" data-bs-toggle="tab"
+                        data-bs-target="#transport" type="button" role="tab" aria-controls="transport"
+                        aria-selected="false">Transport</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link btn btn-secondary mx-2" id="tour-destinations-tab" data-bs-toggle="tab"
+                        data-bs-target="#tour-destinations" type="button" role="tab" aria-controls="tour-destinations"
+                        aria-selected="false">Tour Destinations</button>
+                </li>
+            </ul>
+
+            <div class="tab-content" id="myTabContent">
+                <!-- Accomodation -->
+                <div class="tab-pane fade show active" id="accomodation" role="tabpanel"
+                    aria-labelledby="accomodation-tab">
+                    <div class="container-md">
+                        <div class="row justify-content-center align-items-center">
+                            <!-- Public -->
+                            <div class="col-12 col-md-4">
+                                <div class="card my-5">
+                                    <img src="https://muliratendo.github.io/web-group-c-course-work/assets/images/services/safari2.jpeg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body bg-secondary">
+                                        <h5 class="card-title text-white">Public</h5>
+                                        <div class="text-warning">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+
+                                        <p class="card-text text-white"><i class="bi bi-house-door"></i> : 2 Bedrooms
+                                            and 1 Bathroom
+                                        </p>
+                                        <p class="card-text text-white"><i class="bi bi-fork-knife"></i> : Breakfast in
+                                            Bed</p>
+                                        <p class="card-text text-white"><i class="bi bi-wifi"></i> : Free Wifi</p>
+                                        <a href="#" class="btn btn-warning">Book now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Private -->
+                            <div class="col-12 col-md-4">
+                                <div class="card my-5">
+                                    <img src="https://muliratendo.github.io/web-group-c-course-work/assets/images/services/private.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body bg-secondary">
+                                        <h5 class="card-title text-white">Private</h5>
+                                        <div class="text-warning">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i>
+                                        </div>
+
+                                        <p class="card-text text-white"><i class="bi bi-suit-heart-fill"></i> : King
+                                            sized bed</p>
+                                        <p class="card-text text-white"><i class="bi bi-fork-knife"></i> : Breakfast in
+                                            Bed</p>
+                                        <p class="card-text text-white"><i class="bi bi-wifi"></i> : Free Wifi</p>
+
+                                        <a href="#" class="btn btn-warning">Book now</a>
+                                    </div>
+                                    <span
+                                        class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-danger">
+                                        Most Popular
+                                    </span>
+                                </div>
+                            </div>
+
+
+                            <!-- Exclusive -->
+                            <div class="col-12 col-md-4">
+                                <div class="card my-5">
+                                    <img src="https://muliratendo.github.io/web-group-c-course-work/assets/images/services/exclusive.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body bg-secondary">
+                                        <h5 class="card-title text-white">Exclusive</h5>
+                                        <div class="text-warning">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+
+                                        <p class="card-text text-white"><i class="bi bi-house-door"></i> : 4 bedrooms
+                                            and
+                                            2 bathroom</p>
+                                        <p class="card-text text-white"><i class="bi bi-fork-knife"></i> : Breakfast in
+                                            Bed</p>
+                                        <p class="card-text text-white"><i class="bi bi-wifi"></i> : Fast speed Wifi</p>
+
+                                        <a href="#" class="btn btn-warning">Book now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- For Transport -->
+                <div class="tab-pane fade" id="transport" role="tabpanel" aria-labelledby="transport-tab">
+                    <div class="container-md">
+                        <div class="row justify-content-center align-items-center">
+                            <!--1-->
+                            <div class="col-12 col-md-4">
+                                <div class="card my-5">
+                                    <img src="https://muliratendo.github.io/web-group-c-course-work/assets/images/services/car-3.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body bg-secondary">
+                                        <h5 class="card-title text-white">Public</h5>
+                                        <div class="text-warning">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div>
+
+                                        <p class="card-text text-white"><i class="bi bi-car-front-fill"></i> : 15 Seater
+                                        </p>
+                                        <p class="card-text text-white"><i class="bi bi-lightning-charge-fill"></i> :
+                                            In-built
+                                            charging</p>
+                                        <p class="card-text text-white"><i class="bi bi-fan"></i> : Air Conditioning</p>
+                                        <p class="card-text text-white"><i class="bi bi-wifi"></i> : Free Wifi</p>
+                                        <a href="#" class="btn btn-warning">Order now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--2-->
+
+
+                            <div class="col-12 col-md-4">
+                                <div class="card my-5">
+                                    <img src="https://muliratendo.github.io/web-group-c-course-work/assets/images/services/cars-1.jpeg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body bg-secondary">
+                                        <h5 class="card-title text-white">Private</h5>
+                                        <div class="text-warning">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i>
+                                        </div>
+
+                                        <p class="card-text text-white"><i class="bi bi-car-front-fill"></i> : 10 Seater
+                                        </p>
+                                        <p class="card-text text-white"><i class="bi bi-lightning-charge-fill"></i> :
+                                            In-bulit
+                                            charging</p>
+                                        <p class="card-text text-white"><i class="bi bi-fan"></i> : Air Conditioning</p>
+                                        <p class="card-text text-white"><i class="bi bi-wifi"></i> : Free Wifi</p>
+
+                                        <a href="#" class="btn btn-warning">Book now</a>
+                                    </div>
+                                    <span
+                                        class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-danger">
+                                        Most Popular
+                                    </span>
+                                </div>
+                            </div>
+
+
+                            <!--3-->
+
+                            <div class="col-12 col-md-4">
+                                <div class="card my-5">
+                                    <img src="https://muliratendo.github.io/web-group-c-course-work/assets/images/services/car-5.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body bg-secondary">
+                                        <h5 class="card-title text-white">Exclusive</h5>
+                                        <div class="text-warning">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i>
+                                        </div>
+
+                                        <p class="card-text text-white"><i class="bi bi-car-front-fill"></i> : 7 Seater
+                                        </p>
+                                        <p class="card-text text-white"><i class="bi bi-lightning-charge-fill"></i> :
+                                            In-built
+                                            charging</p>
+                                        <p class="card-text text-white"><i class="bi bi-fan"></i> : Air Conditioning</p>
+                                        <p class="card-text text-white"><i class="bi bi-wifi"></i> : High speed Wifi</p>
+
+                                        <a href="#" class="btn btn-warning">Book now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour Destinations -->
+                <div class="tab-pane fade" id="tour-destinations" role="tabpanel"
+                    aria-labelledby="tour-destinations-tab">
+                    <div class="container-md">
+                        <div class="row g-3 justify-content-center align-items-center">
+                            <div class="col-4">
+                                <!--1-->
+                                <div class="card">
+                                    <a
+                                        href="https://muliratendo.github.io/web-group-c-course-work/assets/blog/blog.html#tanzania">
+                                        <img src="https://muliratendo.github.io/web-group-c-course-work/assets/images/services/mt-kilmanjaro.jpeg"
+                                            class="card-img" alt="...">
+                                        <div class="card-img-overlay">
+                                            <h5 class="card-title text-white">Tanzania</h5>
+
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <!--2-->
+                                <div class="card">
+                                    <a
+                                        href="https://muliratendo.github.io/web-group-c-course-work/assets/blog/blog.html#kenya"><img
+                                            src="https://muliratendo.github.io/web-group-c-course-work/assets/images/services/beach.jpg"
+                                            class="card-img" alt="...">
+                                        <div class="card-img-overlay">
+                                            <h5 class="card-title text-white">Kenya</h5>
+                                        </div>
+                                    </a>
+                                    
+                                    <span
+                                        class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-danger">
+                                        Most Popular
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <!--3-->
+                                <div class="card">
+                                    <a
+                                        href="https://muliratendo.github.io/web-group-c-course-work/assets/blog/blog.html#uganda"><img
+                                            src="https://muliratendo.github.io/web-group-c-course-work/assets/images/services/Top 10 National Parks for Wildlife Photography in 2019 - Big Cats India - Customised Tiger Safari in India.jpeg"
+                                            class="card-img" alt="...">
+                                        <div class="card-img-overlay">
+                                            <h5 class="card-title text-white">Uganda</h5>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="payment-checkout" class="bg-light m-md-5 p-md-5 p-xl-8 rounded-3">
         <div class="container">
             <div class="row gy-5 justify-content-center">
                 <!-- Order and payment summary -->
@@ -79,7 +361,8 @@
                         </div>
                         <div class="col-md-12">
                             <h5 class="fw-bold mt-3">Order summary:</h5>
-                            <div id="" class="card">
+                            <!-- Vue checkout  -->
+                            <div id="checkoutApp" class="card">
 
                             </div>
                         </div>
@@ -103,9 +386,10 @@
                 </div>
 
                 <!-- dividing line -->
-                <div class="col-12 col-lg-1 align-items-center justify-content-center">
-                    <div class="bg-dark d-none h-100 d-lg-block divide-w"></div>
-                    <div class="bg-dark w-100 d-lg-none divide-h"></div>
+                
+            <div class="col-12 col-lg-1 d-flex align-items-center justify-content-center gap-3 flex-lg-column">
+              <div class="bg-primary h-100 d-none d-lg-block" style="width: 1px; --bs-bg-opacity: .1;"></div>
+              <div class="bg-dark w-100 d-lg-none" style="height: 1px; --bs-bg-opacity: .1;"></div>
                 </div>
 
                 <!-- Payment details -->
@@ -170,7 +454,7 @@
     <footer class="bg-light text-white pt-5 pb-3">
         <div class="container-fluid">
             <div class="row g-4 mb-4">
-                
+
                 <!-- logo and Social media handles -->
                 <div class="col-lg-2 col-md-6">
                     <h5 id="logo" class="mb-3 text-white">Nkozi Tours</h5>
@@ -185,15 +469,18 @@
                     </div>
                 </div>
 
-                <!-- Product -->
+                <!-- Services -->
                 <div class="col-lg-2 col-md-6">
                     <h6 class="fw-bold text-white mb-3">Services</h6>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="https://muliratendo.github.io/web-group-c-course-work/assets/services/services.html#transport"
+                        <li class="mb-2"><a
+                                href="https://muliratendo.github.io/web-group-c-course-work/assets/services/services.html#transport"
                                 class="text-muted text-decoration-none small">Transport</a></li>
-                        <li class="mb-2"><a href="https://muliratendo.github.io/web-group-c-course-work/assets/services/services.html#accomodation"
+                        <li class="mb-2"><a
+                                href="https://muliratendo.github.io/web-group-c-course-work/assets/services/services.html#accomodation"
                                 class="text-muted text-decoration-none small">Accommodation</a></li>
-                        <li class="mb-2"><a href="https://muliratendo.github.io/web-group-c-course-work/assets/services/services.html#tour-planner"
+                        <li class="mb-2"><a
+                                href="https://muliratendo.github.io/web-group-c-course-work/assets/services/services.html#tour-planner"
                                 class="text-muted text-decoration-none small">Tour Planner</a></li>
                     </ul>
                 </div>
@@ -202,11 +489,14 @@
                 <div class="col-lg-2 col-md-6">
                     <h6 class="fw-bold text-white mb-3">Blog</h6>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="https://muliratendo.github.io/web-group-c-course-work/assets/blog/blog.html#blog-reviews"
+                        <li class="mb-2"><a
+                                href="https://muliratendo.github.io/web-group-c-course-work/assets/blog/blog.html#blog-reviews"
                                 class="text-muted text-decoration-none small">Reviews</a></li>
-                        <li class="mb-2"><a href="https://muliratendo.github.io/web-group-c-course-work/assets/blog/blog.html#gallery"
+                        <li class="mb-2"><a
+                                href="https://muliratendo.github.io/web-group-c-course-work/assets/blog/blog.html#gallery"
                                 class="text-muted text-decoration-none small">Gallery</a></li>
-                        <li class="mb-2"><a href="https://muliratendo.github.io/web-group-c-course-work/assets/blog/blog.html#blog-reviews"
+                        <li class="mb-2"><a
+                                href="https://muliratendo.github.io/web-group-c-course-work/assets/blog/blog.html#blog-reviews"
                                 class="text-muted text-decoration-none small">Blog</a></li>
                     </ul>
                 </div>
@@ -215,12 +505,15 @@
                 <div class="col-lg-2 col-md-6">
                     <h6 class="fw-bold text-white mb-3">About Us</h6>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="https://muliratendo.github.io/web-group-c-course-work/assets/contact-help/contact-help.html#contact-info"
+                        <li class="mb-2"><a
+                                href="https://muliratendo.github.io/web-group-c-course-work/assets/contact-help/contact-help.html#contact-info"
                                 class="text-muted text-decoration-none small">Contact Us</a>
                         </li>
-                        <li class="mb-2"><a href="https://muliratendo.github.io/web-group-c-course-work/assets/about-us/about-us.html#meet-the-team"
+                        <li class="mb-2"><a
+                                href="https://muliratendo.github.io/web-group-c-course-work/assets/about-us/about-us.html#meet-the-team"
                                 class="text-muted text-decoration-none small">Meet the Team</a></li>
-                        <li class="mb-2"><a href="https://muliratendo.github.io/web-group-c-course-work/assets/contact-help/contact-help.html#help"
+                        <li class="mb-2"><a
+                                href="https://muliratendo.github.io/web-group-c-course-work/assets/contact-help/contact-help.html#help"
                                 class="text-muted text-decoration-none small">Help Center</a></li>
                     </ul>
                 </div>
@@ -247,7 +540,8 @@
                             <p class="text-muted text-decoration-none small">Reg No.: 2025-B291-1049</p>
                         </li>
                         <li class="mb-2">
-                            <p class="text-muted text-decoration-none small">Prog: BACHELOR OF SCIENCE IN COMPUTER SCIENCE</p>
+                            <p class="text-muted text-decoration-none small">Prog: BACHELOR OF SCIENCE IN COMPUTER
+                                SCIENCE</p>
                         </li>
                     </ul>
                 </div>
