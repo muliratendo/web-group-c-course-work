@@ -9,7 +9,7 @@
         href="https://muliratendo.github.io/web-group-c-course-work/assets/images/favicon.png">
     <link rel="stylesheet" href="https://muliratendo.github.io/web-group-c-course-work/css/custom.css">
     <link rel="stylesheet" href="https://muliratendo.github.io/web-group-c-course-work/css/main.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <style>
         /* section{
             padding: 60px 0;
@@ -70,7 +70,7 @@
 
     <!-- main -->
 
-    <section id="pricing">
+    <section id="payment-method" class="bg-light m-md-5 p-md-5 p-xl-8 rounded-3">
         <div class="container-md">
             <!-- Pricing Header -->
             <div class="row justify-content-center text-center my-5">
@@ -100,246 +100,242 @@
                         aria-selected="false">Tour Destinations</button>
                 </li>
             </ul>
+            <div id="checkoutApp">
+                <div class="tab-content" id="myTabContent ">
+                    <!-- Accomodation -->
+                    <div class="tab-pane fade show active" id="accomodation" role="tabpanel"
+                        aria-labelledby="accomodation-tab">
+                        <div class="container-md">
+                            <div class="row justify-content-center align-items-center">
+                                <!-- Public -->
+                                <div class="col-12 col-md-4">
+                                    <div class="card my-5">
+                                        <img src="https://muliratendo.github.io/web-group-c-course-work/assets/images/services/safari2.jpeg"
+                                            class="card-img-top" alt="...">
+                                        <div class="card-body bg-secondary">
+                                            <h5 class="card-title text-white">Public</h5>
+                                            <div class="text-warning">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star"></i>
+                                            </div>
 
-            <div class="tab-content" id="myTabContent">
-                <!-- Accomodation -->
-                <div class="tab-pane fade show active" id="accomodation" role="tabpanel"
-                    aria-labelledby="accomodation-tab">
-                    <div class="container-md">
-                        <div class="row justify-content-center align-items-center">
-                            <!-- Public -->
-                            <div class="col-12 col-md-4">
-                                <div class="card my-5">
-                                    <img src="https://muliratendo.github.io/web-group-c-course-work/assets/images/services/safari2.jpeg"
-                                        class="card-img-top" alt="...">
-                                    <div class="card-body bg-secondary">
-                                        <h5 class="card-title text-white">Public</h5>
-                                        <div class="text-warning">
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star"></i>
+                                            <p class="lead display-6 text-white">$99<small class="fs-5"> per
+                                                    night</small> </p>
+                                            <a href="#" class="btn btn-warning">Proceed to Checkout</a>
                                         </div>
-
-                                        <p class="card-text text-white"><i class="bi bi-house-door"></i> : 2 Bedrooms
-                                            and 1 Bathroom
-                                        </p>
-                                        <p class="card-text text-white"><i class="bi bi-fork-knife"></i> : Breakfast in
-                                            Bed</p>
-                                        <p class="card-text text-white"><i class="bi bi-wifi"></i> : Free Wifi</p>
-                                        <a href="#" class="btn btn-warning">Book now</a>
                                     </div>
                                 </div>
-                            </div>
 
-                            <!-- Private -->
-                            <div class="col-12 col-md-4">
-                                <div class="card my-5">
-                                    <img src="https://muliratendo.github.io/web-group-c-course-work/assets/images/services/private.jpg"
-                                        class="card-img-top" alt="...">
-                                    <div class="card-body bg-secondary">
-                                        <h5 class="card-title text-white">Private</h5>
-                                        <div class="text-warning">
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-half"></i>
+                                <!-- Private -->
+                                <div class="col-12 col-md-4">
+                                    <div class="card my-5">
+                                        <img src="https://muliratendo.github.io/web-group-c-course-work/assets/images/services/private.jpg"
+                                            class="card-img-top" alt="...">
+                                        <div class="card-body bg-secondary">
+                                            <h5 class="card-title text-white">Private</h5>
+                                            <div class="text-warning">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-half"></i>
+                                            </div>
+
+                                            <p class="lead display-6 text-white">$199<small class="fs-5"> per
+                                                    night</small> </p>
+                                            <a href="#" class="btn btn-warning">Proceed to Checkout</a>
                                         </div>
-
-                                        <p class="card-text text-white"><i class="bi bi-suit-heart-fill"></i> : King
-                                            sized bed</p>
-                                        <p class="card-text text-white"><i class="bi bi-fork-knife"></i> : Breakfast in
-                                            Bed</p>
-                                        <p class="card-text text-white"><i class="bi bi-wifi"></i> : Free Wifi</p>
-
-                                        <a href="#" class="btn btn-warning">Book now</a>
+                                        <span
+                                            class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-danger">
+                                            Most Popular
+                                        </span>
                                     </div>
-                                    <span
-                                        class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-danger">
-                                        Most Popular
-                                    </span>
                                 </div>
-                            </div>
 
 
-                            <!-- Exclusive -->
-                            <div class="col-12 col-md-4">
-                                <div class="card my-5">
-                                    <img src="https://muliratendo.github.io/web-group-c-course-work/assets/images/services/exclusive.jpg"
-                                        class="card-img-top" alt="...">
-                                    <div class="card-body bg-secondary">
-                                        <h5 class="card-title text-white">Exclusive</h5>
-                                        <div class="text-warning">
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-half"></i>
-                                            <i class="bi bi-star"></i>
+                                <!-- Exclusive -->
+                                <div class="col-12 col-md-4">
+                                    <div class="card my-5">
+                                        <img src="https://muliratendo.github.io/web-group-c-course-work/assets/images/services/exclusive.jpg"
+                                            class="card-img-top" alt="...">
+                                        <div class="card-body bg-secondary">
+                                            <h5 class="card-title text-white">Exclusive</h5>
+                                            <div class="text-warning">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-half"></i>
+                                                <i class="bi bi-star"></i>
+                                            </div>
+
+                                            <p class="lead display-6 text-white">$399<small class="fs-5"> per
+                                                    night</small> </p>
+                                            <a href="#" class="btn btn-warning">Proceed to Checkout</a>
                                         </div>
-
-                                        <p class="card-text text-white"><i class="bi bi-house-door"></i> : 4 bedrooms
-                                            and
-                                            2 bathroom</p>
-                                        <p class="card-text text-white"><i class="bi bi-fork-knife"></i> : Breakfast in
-                                            Bed</p>
-                                        <p class="card-text text-white"><i class="bi bi-wifi"></i> : Fast speed Wifi</p>
-
-                                        <a href="#" class="btn btn-warning">Book now</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- For Transport -->
-                <div class="tab-pane fade" id="transport" role="tabpanel" aria-labelledby="transport-tab">
-                    <div class="container-md">
-                        <div class="row justify-content-center align-items-center">
-                            <!--1-->
-                            <div class="col-12 col-md-4">
-                                <div class="card my-5">
-                                    <img src="https://muliratendo.github.io/web-group-c-course-work/assets/images/services/car-3.jpg"
-                                        class="card-img-top" alt="...">
-                                    <div class="card-body bg-secondary">
-                                        <h5 class="card-title text-white">Public</h5>
-                                        <div class="text-warning">
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
+                    <!-- For Transport -->
+                    <div class="tab-pane fade" id="transport" role="tabpanel" aria-labelledby="transport-tab">
+                        <div class="container-md">
+                            <div class="row justify-content-center align-items-center">
+                                <!-- Public -->
+                                <div class="col-12 col-md-4">
+                                    <div class="card my-5">
+                                        <img src="https://muliratendo.github.io/web-group-c-course-work/assets/images/services/car-3.jpg"
+                                            class="card-img-top" alt="...">
+                                        <div class="card-body bg-secondary">
+                                            <h5 class="card-title text-white">Public</h5>
+                                            <div class="text-warning">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                            </div>
+
+                                            <p class="lead display-6 text-white">$5<small class="fs-5"> per hour</small>
+                                            </p>
+                                            <a href="#" class="btn btn-warning">Proceed to Checkout</a>
                                         </div>
-
-                                        <p class="card-text text-white"><i class="bi bi-car-front-fill"></i> : 15 Seater
-                                        </p>
-                                        <p class="card-text text-white"><i class="bi bi-lightning-charge-fill"></i> :
-                                            In-built
-                                            charging</p>
-                                        <p class="card-text text-white"><i class="bi bi-fan"></i> : Air Conditioning</p>
-                                        <p class="card-text text-white"><i class="bi bi-wifi"></i> : Free Wifi</p>
-                                        <a href="#" class="btn btn-warning">Order now</a>
                                     </div>
                                 </div>
-                            </div>
 
-                            <!--2-->
+                                <!-- Private -->
+                                <div class="col-12 col-md-4">
+                                    <div class="card my-5">
+                                        <img src="https://muliratendo.github.io/web-group-c-course-work/assets/images/services/cars-1.jpeg"
+                                            class="card-img-top" alt="...">
+                                        <div class="card-body bg-secondary">
+                                            <h5 class="card-title text-white">Private</h5>
+                                            <div class="text-warning">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-half"></i>
+                                            </div>
 
-
-                            <div class="col-12 col-md-4">
-                                <div class="card my-5">
-                                    <img src="https://muliratendo.github.io/web-group-c-course-work/assets/images/services/cars-1.jpeg"
-                                        class="card-img-top" alt="...">
-                                    <div class="card-body bg-secondary">
-                                        <h5 class="card-title text-white">Private</h5>
-                                        <div class="text-warning">
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-half"></i>
+                                            <p class="lead display-6 text-white">$50<small class="fs-5"> per
+                                                    hour</small> </p>
+                                            <a href="#" class="btn btn-warning">Proceed to Checkout</a>
                                         </div>
-
-                                        <p class="card-text text-white"><i class="bi bi-car-front-fill"></i> : 10 Seater
-                                        </p>
-                                        <p class="card-text text-white"><i class="bi bi-lightning-charge-fill"></i> :
-                                            In-bulit
-                                            charging</p>
-                                        <p class="card-text text-white"><i class="bi bi-fan"></i> : Air Conditioning</p>
-                                        <p class="card-text text-white"><i class="bi bi-wifi"></i> : Free Wifi</p>
-
-                                        <a href="#" class="btn btn-warning">Book now</a>
+                                        <span
+                                            class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-danger">
+                                            Most Popular
+                                        </span>
                                     </div>
-                                    <span
-                                        class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-danger">
-                                        Most Popular
-                                    </span>
                                 </div>
-                            </div>
 
 
-                            <!--3-->
+                                <!--Exclusive-->
+                                <div class="col-12 col-md-4">
+                                    <div class="card my-5">
+                                        <img src="https://muliratendo.github.io/web-group-c-course-work/assets/images/services/car-5.jpg"
+                                            class="card-img-top" alt="...">
+                                        <div class="card-body bg-secondary">
+                                            <h5 class="card-title text-white">Exclusive</h5>
+                                            <div class="text-warning">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-half"></i>
+                                            </div>
 
-                            <div class="col-12 col-md-4">
-                                <div class="card my-5">
-                                    <img src="https://muliratendo.github.io/web-group-c-course-work/assets/images/services/car-5.jpg"
-                                        class="card-img-top" alt="...">
-                                    <div class="card-body bg-secondary">
-                                        <h5 class="card-title text-white">Exclusive</h5>
-                                        <div class="text-warning">
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-half"></i>
+                                            <p class="lead display-6 text-white">$500<small class="fs-5"> per
+                                                    hour</small> </p>
+                                            <a href="#" class="btn btn-warning">Proceed to Checkout</a>
                                         </div>
-
-                                        <p class="card-text text-white"><i class="bi bi-car-front-fill"></i> : 7 Seater
-                                        </p>
-                                        <p class="card-text text-white"><i class="bi bi-lightning-charge-fill"></i> :
-                                            In-built
-                                            charging</p>
-                                        <p class="card-text text-white"><i class="bi bi-fan"></i> : Air Conditioning</p>
-                                        <p class="card-text text-white"><i class="bi bi-wifi"></i> : High speed Wifi</p>
-
-                                        <a href="#" class="btn btn-warning">Book now</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Tour Destinations -->
-                <div class="tab-pane fade" id="tour-destinations" role="tabpanel"
-                    aria-labelledby="tour-destinations-tab">
-                    <div class="container-md">
-                        <div class="row g-3 justify-content-center align-items-center">
-                            <div class="col-4">
-                                <!--1-->
-                                <div class="card">
-                                    <a
-                                        href="https://muliratendo.github.io/web-group-c-course-work/assets/blog/blog.html#tanzania">
-                                        <img src="https://muliratendo.github.io/web-group-c-course-work/assets/images/services/mt-kilmanjaro.jpeg"
-                                            class="card-img" alt="...">
-                                        <div class="card-img-overlay">
-                                            <h5 class="card-title text-white">Tanzania</h5>
+                    <!-- Tour Destinations -->
+                    <div class="tab-pane fade" id="tour-destinations" role="tabpanel"
+                        aria-labelledby="tour-destinations-tab">
+                        <div class="container-md">
+                            <div class="row g-3 justify-content-center align-items-center">
+                                <div class="col-4">
+                                    <!-- Tanzania -->
+                                    <div class="card">
+                                        <div>
+                                            <img src="https://muliratendo.github.io/web-group-c-course-work/assets/images/services/mt-kilmanjaro.jpeg"
+                                                class="card-img" alt="...">
+                                            <div class="card-body bg-secondary">
+                                                <h5 class="card-title text-white">Tanzania</h5>
+                                                <div class="text-warning">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star"></i>
+                                                </div>
 
+                                                <p class="lead display-6 text-white">$899<small class="fs-5"> per
+                                                        person</small> </p>
+                                                <a href="#" class="btn btn-warning">Proceed to Checkout</a>
+                                            </div>
                                         </div>
-                                    </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-4">
-                                <!--2-->
-                                <div class="card">
-                                    <a
-                                        href="https://muliratendo.github.io/web-group-c-course-work/assets/blog/blog.html#kenya"><img
-                                            src="https://muliratendo.github.io/web-group-c-course-work/assets/images/services/beach.jpg"
-                                            class="card-img" alt="...">
-                                        <div class="card-img-overlay">
-                                            <h5 class="card-title text-white">Kenya</h5>
+                                <div class="col-4">
+                                    <!-- Kenya -->
+                                    <div class="card">
+                                        <div>
+                                            <img src="https://muliratendo.github.io/web-group-c-course-work/assets/images/services/beach.jpg"
+                                                class="card-img" alt="...">
+                                            <div class="card-body bg-secondary">
+                                                <h5 class="card-title text-white">Kenya</h5>
+                                                <div class="text-warning">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-half"></i>
+                                                </div>
+
+                                                <p class="lead display-6 text-white">$1999<small class="fs-5"> per
+                                                        person</small> </p>
+                                                <a href="#" class="btn btn-warning">Proceed to Checkout</a>
+                                            </div>
                                         </div>
-                                    </a>
-                                    
-                                    <span
-                                        class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-danger">
-                                        Most Popular
-                                    </span>
+                                        <span
+                                            class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-danger">
+                                            Most Popular
+                                        </span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-4">
-                                <!--3-->
-                                <div class="card">
-                                    <a
-                                        href="https://muliratendo.github.io/web-group-c-course-work/assets/blog/blog.html#uganda"><img
-                                            src="https://muliratendo.github.io/web-group-c-course-work/assets/images/services/Top 10 National Parks for Wildlife Photography in 2019 - Big Cats India - Customised Tiger Safari in India.jpeg"
-                                            class="card-img" alt="...">
-                                        <div class="card-img-overlay">
-                                            <h5 class="card-title text-white">Uganda</h5>
+                                <div class="col-4">
+                                    <!--Uganda-->
+                                    <div class="card">
+                                        <div>
+                                            <img src="https://muliratendo.github.io/web-group-c-course-work/assets/images/services/Top 10 National Parks for Wildlife Photography in 2019 - Big Cats India - Customised Tiger Safari in India.jpeg"
+                                                class="card-img" alt="...">
+                                            <div class="card-body bg-secondary">
+                                                <h5 class="card-title text-white">Uganda</h5>
+                                                <div class="text-warning">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-half"></i>
+                                                    <i class="bi bi-star"></i>
+                                                </div>
+
+                                                <p class="lead display-6 text-white">$299<small class="fs-5"> per
+                                                        person</small> </p>
+                                                <a href="#" class="btn btn-warning">Proceed to Checkout</a>
+                                            </div>
                                         </div>
-                                    </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -356,45 +352,76 @@
                 <!-- Order and payment summary -->
                 <div class="col-12 col-lg-6 justify-content-center align-items-center">
                     <div class="row text-start">
-                        <div class="col-md-12 text-start">
-                            <P class="lead primary"><i class="bi bi-arrow-left-circle"></i> Go back to order details</P>
-                        </div>
                         <div class="col-md-12">
                             <h5 class="fw-bold mt-3">Order summary:</h5>
                             <!-- Vue checkout  -->
-                            <div id="checkoutApp" class="card">
+                            <div id="checkoutApp" class="px-5 py-3">
+                                <div class="card">
+                                    <img src="https://muliratendo.github.io/web-group-c-course-work/assets/images/services/safari2.jpeg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body bg-secondary">
+                                        <h5 class="card-title text-white">Public</h5>
+                                        <div class="text-warning">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
 
+                                        <p class="lead display-6 text-white">$99<small class="fs-5"> per night</small>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="col-12">
-                            <h6>Select payment method:</h6>
-                            <form class="form-check">
-                                <input type="radio" name="paymentMethod" id="creditCard" class="form-check-input"
-                                    checked>
-                                <label for="creditCard" class="form-check-label">Credit Card</label>
-                            </form>
-                            <form class="form-check">
-                                <input type="radio" name="paymentMethod" id="debitCard" class="form-check-input">
-                                <label for="debitCard" class="form-check-label">Debit Card</label>
-                            </form>
-                            <form class="form-check">
-                                <input type="radio" name="paymentMethod" id="payPal" class="form-check-input">
-                                <label for="payPal" class="form-check-label">PayPal</label>
-                            </form>
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-7">
+                                    <button
+                                        class="btn btn-dark btn-lg d-flex justify-content-center align-items-center py-2 px-3 gap-2 mx-auto my-2 w-100">
+                                        <i class="bi bi-apple"></i>
+                                        <span class="text-white fs-6">Pay with Apple Pay</span>
+                                    </button>
+                                </div>
+                                <div class="col-7">
+                                    <button type="button"
+                                        class="btn btn-danger d-flex justify-content-center align-items-center py-2 px-3 gap-2 mx-auto my-2 w-100">
+                                        <img src="https://developers.google.com/pay/api/images/brand-guidelines/google-pay-mark.png"
+                                            alt="Google Pay" height="24">
+                                        <span class="text-white fs-6">Pay with Google Pay</span>
+                                    </button>
+                                </div>
+                                <div class="col-7">
+                                    <button type="button"
+                                        class="btn btn-warning d-flex justify-content-center align-items-center py-2 px-4 gap-2 mx-auto my-2 w-100">
+                                        <i class="bi bi-wallet2"></i>
+                                        <span class="text-white fs-6">Pay with MOMO Pay</span>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- dividing line -->
-                
-            <div class="col-12 col-lg-1 d-flex align-items-center justify-content-center gap-3 flex-lg-column">
-              <div class="bg-primary h-100 d-none d-lg-block" style="width: 1px; --bs-bg-opacity: .1;"></div>
-              <div class="bg-dark w-100 d-lg-none" style="height: 1px; --bs-bg-opacity: .1;"></div>
+
+                <div class="col-12 col-lg-1 d-flex align-items-center justify-content-center gap-3 flex-lg-column">
+                    <div class="bg-primary h-100 d-none d-lg-block" style="width: 1px; --bs-bg-opacity: .1;"></div>
+                    <div class="bg-dark w-100 d-lg-none" style="height: 1px; --bs-bg-opacity: .1;"></div>
                 </div>
 
                 <!-- Payment details -->
                 <div class="col-12 col-lg-5 align-items-center justify-content-center">
                     <h3 class="fw-bold my-3">Checkout</h3>
+                    <h6>Select payment method:</h6>
+                    <form class="form-check">
+                        <input type="radio" name="paymentMethod" id="creditCard" class="form-check-input" checked>
+                        <label for="creditCard" class="form-check-label">Credit Card</label>
+                        <br>
+                        <input type="radio" name="paymentMethod" id="debitCard" class="form-check-input">
+                        <label for="debitCard" class="form-check-label">Debit Card</label>
+                    </form>
                     <form novalidate>
                         <div class="row g-3">
                             <div class="col-sm-10 mx-auto">
