@@ -16,7 +16,15 @@
             padding: 60px 0;
         } */
     </style>
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+        window.SnipcartSettings = {
+            publicApiKey: 'NDBmMmIwYzItYTk4OS00Y2RkLTkzODItZjBhNzM0ZGRhYTVjNjM4OTk0NDA4MDkyMTEyNDMw',
+            loadStrategy: 'on-user-interaction',
+            currency: "usd",
+        };
+
+        (() => { var c, d; (d = (c = window.SnipcartSettings).version) != null || (c.version = "3.0"); var s, S; (S = (s = window.SnipcartSettings).timeoutDuration) != null || (s.timeoutDuration = 2750); var l, p; (p = (l = window.SnipcartSettings).domain) != null || (l.domain = "cdn.snipcart.com"); var w, u; (u = (w = window.SnipcartSettings).protocol) != null || (w.protocol = "https"); var f = window.SnipcartSettings.version.includes("v3.0.0-ci") || window.SnipcartSettings.version != "3.0" && window.SnipcartSettings.version.localeCompare("3.4.0", void 0, { numeric: !0, sensitivity: "base" }) === -1, m = ["focus", "mouseover", "touchmove", "scroll", "keydown"]; window.LoadSnipcart = o; document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", r) : r(); function r() { window.SnipcartSettings.loadStrategy ? window.SnipcartSettings.loadStrategy === "on-user-interaction" && (m.forEach(t => document.addEventListener(t, o)), setTimeout(o, window.SnipcartSettings.timeoutDuration)) : o() } var a = !1; function o() { if (a) return; a = !0; let t = document.getElementsByTagName("head")[0], e = document.querySelector("#snipcart"), i = document.querySelector(`src[src^="${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}"][src$="snipcart.js"]`), n = document.querySelector(`link[href^="${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}"][href$="snipcart.css"]`); e || (e = document.createElement("div"), e.id = "snipcart", e.setAttribute("hidden", "true"), document.body.appendChild(e)), v(e), i || (i = document.createElement("script"), i.src = `${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}/themes/v${window.SnipcartSettings.version}/default/snipcart.js`, i.async = !0, t.appendChild(i)), n || (n = document.createElement("link"), n.rel = "stylesheet", n.type = "text/css", n.href = `${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}/themes/v${window.SnipcartSettings.version}/default/snipcart.css`, t.prepend(n)), m.forEach(g => document.removeEventListener(g, o)) } function v(t) { !f || (t.dataset.apiKey = window.SnipcartSettings.publicApiKey, window.SnipcartSettings.addProductBehavior && (t.dataset.configAddProductBehavior = window.SnipcartSettings.addProductBehavior), window.SnipcartSettings.modalStyle && (t.dataset.configModalStyle = window.SnipcartSettings.modalStyle), window.SnipcartSettings.currency && (t.dataset.currency = window.SnipcartSettings.currency), window.SnipcartSettings.templatesUrl && (t.dataset.templatesUrl = window.SnipcartSettings.templatesUrl)) } })();
+    </script>
 </head>
 
 <body class="bg-dark">
@@ -88,19 +96,22 @@
                 <li class="nav-item" role="presentation">
                     <button class="nav-link btn btn-secondary mx-2 active" id="accomodation-tab" data-bs-toggle="tab"
                         data-bs-target="#accomodation" type="button" role="tab" aria-controls="accomodation"
-                        aria-selected="true" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-in-sine" data-aos-anchor-placement="top-bottom">
+                        aria-selected="true" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-in-sine"
+                        data-aos-anchor-placement="top-bottom">
                         Accommodation</button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link btn btn-secondary mx-2" id="transport-tab" data-bs-toggle="tab"
                         data-bs-target="#transport" type="button" role="tab" aria-controls="transport"
-                        aria-selected="false" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-in-sine" data-aos-anchor-placement="top-bottom">
+                        aria-selected="false" data-aos="zoom-out" data-aos-duration="1500"
+                        data-aos-easing="ease-in-sine" data-aos-anchor-placement="top-bottom">
                         Transport</button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link btn btn-secondary mx-2" id="tour-destinations-tab" data-bs-toggle="tab"
                         data-bs-target="#tour-destinations" type="button" role="tab" aria-controls="tour-destinations"
-                        aria-selected="false" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-in-sine" data-aos-anchor-placement="top-bottom">
+                        aria-selected="false" data-aos="zoom-out" data-aos-duration="1500"
+                        data-aos-easing="ease-in-sine" data-aos-anchor-placement="top-bottom">
                         Tour Destinations</button>
                 </li>
             </ul>
@@ -128,8 +139,10 @@
 
                                             <p class="lead display-6 text-white">$99<small class="fs-5"> per
                                                     night</small> </p>
-                                            <a href="#" class="btn btn-warning" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-in-sine" data-aos-anchor-placement="top-bottom">
-                                                Proceed to Checkout</a>
+                                            <a href="#" class="btn btn-warning snipcart-add-item" data-aos="zoom-out"
+                                                data-aos-duration="1500" data-aos-easing="ease-in-sine"
+                                                data-aos-anchor-placement="top-bottom">
+                                                Add to Checkout</a>
                                         </div>
                                     </div>
                                 </div>
@@ -151,8 +164,10 @@
 
                                             <p class="lead display-6 text-white">$199<small class="fs-5"> per
                                                     night</small> </p>
-                                            <a href="#" class="btn btn-warning" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-in-sine" data-aos-anchor-placement="top-bottom">
-                                                Proceed to Checkout</a>
+                                            <a href="#" class="btn btn-warning snipcart-add-item" data-aos="zoom-out"
+                                                data-aos-duration="1500" data-aos-easing="ease-in-sine"
+                                                data-aos-anchor-placement="top-bottom">
+                                                Add to Checkout</a>
                                         </div>
                                         <span
                                             class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-danger">
@@ -179,8 +194,10 @@
 
                                             <p class="lead display-6 text-white">$399<small class="fs-5"> per
                                                     night</small> </p>
-                                            <a href="#" class="btn btn-warning" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-in-sine" data-aos-anchor-placement="top-bottom">
-                                                Proceed to Checkout</a>
+                                            <a href="#" class="btn btn-warning snipcart-add-item" data-aos="zoom-out"
+                                                data-aos-duration="1500" data-aos-easing="ease-in-sine"
+                                                data-aos-anchor-placement="top-bottom">
+                                                Add to Checkout</a>
                                         </div>
                                     </div>
                                 </div>
@@ -209,8 +226,10 @@
 
                                             <p class="lead display-6 text-white">$5<small class="fs-5"> per hour</small>
                                             </p>
-                                            <a href="#" class="btn btn-warning" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-in-sine" data-aos-anchor-placement="top-bottom">
-                                                Proceed to Checkout</a>
+                                            <a href="#" class="btn btn-warning snipcart-add-item" data-aos="zoom-out"
+                                                data-aos-duration="1500" data-aos-easing="ease-in-sine"
+                                                data-aos-anchor-placement="top-bottom">
+                                                Add to Checkout</a>
                                         </div>
                                     </div>
                                 </div>
@@ -232,8 +251,10 @@
 
                                             <p class="lead display-6 text-white">$50<small class="fs-5"> per
                                                     hour</small> </p>
-                                            <a href="#" class="btn btn-warning" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-in-sine" data-aos-anchor-placement="top-bottom">
-                                                Proceed to Checkout</a>
+                                            <a href="#" class="btn btn-warning snipcart-add-item" data-aos="zoom-out"
+                                                data-aos-duration="1500" data-aos-easing="ease-in-sine"
+                                                data-aos-anchor-placement="top-bottom">
+                                                Add to Checkout</a>
                                         </div>
                                         <span
                                             class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-danger">
@@ -260,8 +281,10 @@
 
                                             <p class="lead display-6 text-white">$500<small class="fs-5"> per
                                                     hour</small> </p>
-                                            <a href="#" class="btn btn-warning" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-in-sine" data-aos-anchor-placement="top-bottom">
-                                                Proceed to Checkout</a>
+                                            <a href="#" class="btn btn-warning snipcart-add-item" data-aos="zoom-out"
+                                                data-aos-duration="1500" data-aos-easing="ease-in-sine"
+                                                data-aos-anchor-placement="top-bottom">
+                                                Add to Checkout</a>
                                         </div>
                                     </div>
                                 </div>
@@ -292,8 +315,11 @@
 
                                                 <p class="lead display-6 text-white">$899<small class="fs-5"> per
                                                         person</small> </p>
-                                                <a href="#" class="btn btn-warning" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-in-sine" data-aos-anchor-placement="top-bottom">
-                                                    Proceed to Checkout</a>
+                                                <a href="#" class="btn btn-warning snipcart-add-item"
+                                                    data-aos="zoom-out" data-aos-duration="1500"
+                                                    data-aos-easing="ease-in-sine"
+                                                    data-aos-anchor-placement="top-bottom">
+                                                    Add to Checkout</a>
                                             </div>
                                         </div>
                                     </div>
@@ -316,8 +342,11 @@
 
                                                 <p class="lead display-6 text-white">$1999<small class="fs-5"> per
                                                         person</small> </p>
-                                                <a href="#" class="btn btn-warning" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-in-sine" data-aos-anchor-placement="top-bottom">
-                                                    Proceed to Checkout</a>
+                                                <a href="#" class="btn btn-warning snipcart-add-item"
+                                                    data-aos="zoom-out" data-aos-duration="1500"
+                                                    data-aos-easing="ease-in-sine"
+                                                    data-aos-anchor-placement="top-bottom">
+                                                    Add to Checkout</a>
                                             </div>
                                         </div>
                                         <span
@@ -344,8 +373,16 @@
 
                                                 <p class="lead display-6 text-white">$299<small class="fs-5"> per
                                                         person</small> </p>
-                                                <a href="#" class="btn btn-warning" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-in-sine" data-aos-anchor-placement="top-bottom">
-                                                    Proceed to Checkout</a>
+                                                <a href="#" class="btn btn-warning snipcart-add-item"
+                                                    data-aos="zoom-out" data-aos-duration="1500"
+                                                    data-aos-easing="ease-in-sine"
+                                                    data-aos-anchor-placement="top-bottom"
+                                                    data-item-id="uganda"
+                                                    data-item-price="299"
+                                                    data-item-description=""
+                                                    data-item-image="https://muliratendo.github.io/web-group-c-course-work/assets/images/services/Top 10 National Parks for Wildlife Photography in 2019 - Big Cats India - Customised Tiger Safari in India.jpeg"
+                                                    data-item-name="Uganda">
+                                                    Add to Checkout</a>
                                             </div>
                                         </div>
                                     </div>
@@ -368,7 +405,8 @@
                         <div class="col-md-12">
                             <h5 class="fw-bold mt-3">Order summary:</h5>
                             <!-- Vue checkout  -->
-                            <div id="checkoutApp" class="px-5 py-3" data-aos="fade-up" data-aos-duration="1500" data-aos-anchor-placement="center-bottom">
+                            <div id="checkoutApp" class="px-5 py-3" data-aos="fade-up" data-aos-duration="1500"
+                                data-aos-anchor-placement="center-bottom">
                                 <div class="card">
                                     <img src="https://muliratendo.github.io/web-group-c-course-work/assets/images/services/safari2.jpeg"
                                         class="card-img-top" alt="...">
@@ -390,21 +428,24 @@
                         </div>
                         <div class="col-12">
                             <div class="row justify-content-center align-items-center">
-                                <div class="col-8" data-aos="zoom-out-down" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom">
+                                <div class="col-8" data-aos="zoom-out-down" data-aos-duration="1000"
+                                    data-aos-anchor-placement="bottom-bottom">
                                     <button type="button"
                                         class="btn btn-danger d-flex justify-content-center align-items-center py-2 px-3 gap-2 mx-auto my-2 w-100">
                                         <i class="bi bi-google"></i>
                                         <span class="text-white fs-6">Pay with Google Pay</span>
                                     </button>
                                 </div>
-                                <div class="col-8" data-aos="zoom-out-right" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom">
+                                <div class="col-8" data-aos="zoom-out-right" data-aos-duration="1000"
+                                    data-aos-anchor-placement="bottom-bottom">
                                     <button
                                         class="btn btn-dark btn-lg d-flex justify-content-center align-items-center py-2 px-3 gap-2 mx-auto my-2 w-100">
                                         <i class="bi bi-apple"></i>
                                         <span class="text-white fs-6">Pay with Apple Pay</span>
                                     </button>
                                 </div>
-                                <div class="col-8" data-aos="zoom-out-up" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom">
+                                <div class="col-8" data-aos="zoom-out-up" data-aos-duration="1000"
+                                    data-aos-anchor-placement="bottom-bottom">
                                     <button type="button"
                                         class="btn btn-warning d-flex justify-content-center align-items-center py-2 px-4 gap-2 mx-auto my-2 w-100">
                                         <i class="bi bi-wallet2"></i>
@@ -481,7 +522,9 @@
                         </div>
                         <hr class="my-2">
                         <div class="text-center">
-                            <button class="btn btn-outline-secondary btn-md btn-block mt-4" type="submit" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-in-sine" data-aos-anchor-placement="top-bottom">
+                            <button class="btn btn-outline-secondary btn-md btn-block mt-4" type="submit"
+                                data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-in-sine"
+                                data-aos-anchor-placement="top-bottom">
                                 Complete Payment</button>
                         </div>
                     </form>
@@ -566,7 +609,8 @@
                                 class="text-muted text-decoration-none small">Payment and Checkout</a></li>
                     </ul>
                     <a href="https://muliratendo.github.io/web-group-c-course-work/assets/signup-login/login/login.html#login"
-                        class="btn btn-sm btn-outline-secondary mt-2" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-in-sine" data-aos-anchor-placement="top-bottom">
+                        class="btn btn-sm btn-outline-secondary mt-2" data-aos="zoom-out" data-aos-duration="1500"
+                        data-aos-easing="ease-in-sine" data-aos-anchor-placement="top-bottom">
                         Login</a>
                 </div>
 

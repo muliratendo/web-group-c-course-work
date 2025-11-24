@@ -15,6 +15,15 @@
             padding: 60px 0;
         }
     </style>
+    <script>
+        window.SnipcartSettings = {
+            publicApiKey: 'NDBmMmIwYzItYTk4OS00Y2RkLTkzODItZjBhNzM0ZGRhYTVjNjM4OTk0NDA4MDkyMTEyNDMw',
+            loadStrategy: 'on-user-interaction',
+            currency: "usd",
+        };
+
+        (() => { var c, d; (d = (c = window.SnipcartSettings).version) != null || (c.version = "3.0"); var s, S; (S = (s = window.SnipcartSettings).timeoutDuration) != null || (s.timeoutDuration = 2750); var l, p; (p = (l = window.SnipcartSettings).domain) != null || (l.domain = "cdn.snipcart.com"); var w, u; (u = (w = window.SnipcartSettings).protocol) != null || (w.protocol = "https"); var f = window.SnipcartSettings.version.includes("v3.0.0-ci") || window.SnipcartSettings.version != "3.0" && window.SnipcartSettings.version.localeCompare("3.4.0", void 0, { numeric: !0, sensitivity: "base" }) === -1, m = ["focus", "mouseover", "touchmove", "scroll", "keydown"]; window.LoadSnipcart = o; document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", r) : r(); function r() { window.SnipcartSettings.loadStrategy ? window.SnipcartSettings.loadStrategy === "on-user-interaction" && (m.forEach(t => document.addEventListener(t, o)), setTimeout(o, window.SnipcartSettings.timeoutDuration)) : o() } var a = !1; function o() { if (a) return; a = !0; let t = document.getElementsByTagName("head")[0], e = document.querySelector("#snipcart"), i = document.querySelector(`src[src^="${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}"][src$="snipcart.js"]`), n = document.querySelector(`link[href^="${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}"][href$="snipcart.css"]`); e || (e = document.createElement("div"), e.id = "snipcart", e.setAttribute("hidden", "true"), document.body.appendChild(e)), v(e), i || (i = document.createElement("script"), i.src = `${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}/themes/v${window.SnipcartSettings.version}/default/snipcart.js`, i.async = !0, t.appendChild(i)), n || (n = document.createElement("link"), n.rel = "stylesheet", n.type = "text/css", n.href = `${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}/themes/v${window.SnipcartSettings.version}/default/snipcart.css`, t.prepend(n)), m.forEach(g => document.removeEventListener(g, o)) } function v(t) { !f || (t.dataset.apiKey = window.SnipcartSettings.publicApiKey, window.SnipcartSettings.addProductBehavior && (t.dataset.configAddProductBehavior = window.SnipcartSettings.addProductBehavior), window.SnipcartSettings.modalStyle && (t.dataset.configModalStyle = window.SnipcartSettings.modalStyle), window.SnipcartSettings.currency && (t.dataset.currency = window.SnipcartSettings.currency), window.SnipcartSettings.templatesUrl && (t.dataset.templatesUrl = window.SnipcartSettings.templatesUrl)) } })();
+    </script>
 </head>
 
 <body class="bg-dark">
@@ -84,7 +93,8 @@
                         journeys crafted just for you.</p>
                     <div id="heroButton">
                         <a href="https://muliratendo.github.io/web-group-c-course-work/assets/services/services.html"
-                            class="btn btn-outline-secondary" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-in-sine" data-aos-anchor-placement="top-bottom">Book Demo</a>
+                            class="btn btn-outline-secondary" data-aos="zoom-out" data-aos-duration="1500"
+                            data-aos-easing="ease-in-sine" data-aos-anchor-placement="top-bottom">Book Demo</a>
                     </div>
                 </div>
                 <div class="col-md-6 position-relative end-0 top-0 z-0 rounded-3" style="margin-left: 17%;"
@@ -109,7 +119,8 @@
                     <h2> Enjoy the breathtaking views of Mount Kilimanjaro in Tanzania </h2>
                     <a href="https://muliratendo.github.io/web-group-c-course-work/assets/blog/blog.html#tanzania"
                         class="text-decoration-none">
-                        <p class="text-white lead"  data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-in-sine" data-aos-anchor-placement="top-bottom">Read more...</p>
+                        <p class="text-white lead" data-aos="zoom-out" data-aos-duration="1500"
+                            data-aos-easing="ease-in-sine" data-aos-anchor-placement="top-bottom">Read more...</p>
                     </a>
                 </div>
             </div>
@@ -120,7 +131,9 @@
                     <h2>We offer wonderful nights at the best hotels in East Africa</h2>
                     <a href="https://muliratendo.github.io/web-group-c-course-work/assets/services/services.html#accomodation"
                         class="text-decoration-none">
-                        <p class="text-white lead" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-in-sine" data-aos-anchor-placement="top-bottom">Book your stay with us!</p>
+                        <p class="text-white lead" data-aos="zoom-out" data-aos-duration="1500"
+                            data-aos-easing="ease-in-sine" data-aos-anchor-placement="top-bottom">Book your stay with
+                            us!</p>
                     </a>
                 </div>
             </div>
@@ -131,7 +144,9 @@
                     <h2>Take a drive through the large safari plains in East Africa</h2>
                     <a href="https://muliratendo.github.io/web-group-c-course-work/assets/services/services.html#transport"
                         class="text-decoration-none">
-                        <p class="text-white lead" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-in-sine" data-aos-anchor-placement="top-bottom">Book your transport with us!</p>
+                        <p class="text-white lead" data-aos="zoom-out" data-aos-duration="1500"
+                            data-aos-easing="ease-in-sine" data-aos-anchor-placement="top-bottom">Book your transport
+                            with us!</p>
                     </a>
                 </div>
             </div>
@@ -155,7 +170,8 @@
             <h2 class="text-center text-primary mt-5 mb-4" data-aos="zoom-out" data-aos-duration="1500" data-aos-once="true">What Our
                 Customers Are Saying</h2>
             <div class="row g-1 justify-content-center">
-                <div class="col-lg-3 bg-light m-md-3 p-md-4 p-xl-8 rounded-3" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                <div class="col-lg-3 bg-light m-md-3 p-md-4 p-xl-8 rounded-3" data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom">
                     <h5>Carol Fisher <br> <small class="text-muted">(10 minutes ago)</small></h5>
                     <div class="text-warning">
                         <i class="bi bi-star-fill"></i>
@@ -171,8 +187,9 @@
                         safe
                         and respectful.</p>
                 </div>
-                
-                <div class="col-lg-3 bg-light m-md-3 p-md-4 p-xl-8 rounded-3" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+
+                <div class="col-lg-3 bg-light m-md-3 p-md-4 p-xl-8 rounded-3" data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom">
                     <h5>Zheng He <br> <small class="text-muted">(10 minutes ago)</small></h5>
                     <div class="text-warning">
                         <i class="bi bi-star-fill"></i>
@@ -187,7 +204,8 @@
                     </p>
                 </div>
 
-                <div class="col-lg-3 bg-light m-md-3 p-md-4 p-xl-8 rounded-3" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                <div class="col-lg-3 bg-light m-md-3 p-md-4 p-xl-8 rounded-3" data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom">
                     <h5>Rick Steves <br> <small class="text-muted">(10 minutes ago)</small></h5>
                     <div class="text-warning">
                         <i class="bi bi-star-fill"></i>
@@ -203,7 +221,8 @@
                 </div>
             </div>
             <a href="https://muliratendo.github.io/web-group-c-course-work/assets/blog/blog.html" class="text-center">
-                <p class="text-primary fs-4 lead my-3" data-aos="zoom-out" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom">Read more reviews...
+                <p class="text-primary fs-4 lead my-3" data-aos="zoom-out" data-aos-duration="1000"
+                    data-aos-anchor-placement="bottom-bottom">Read more reviews...
                 </p>
             </a>
         </div>
@@ -282,7 +301,9 @@
                     </div>
                 </div>
             </div>
-            <a href="./assets/contact-help/contact-help.html" class="btn btn-md btn-outline-secondary mt-3 mx-auto"  data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-in-sine" data-aos-anchor-placement="top-bottom">Get
+            <a href="./assets/contact-help/contact-help.html" class="btn btn-md btn-outline-secondary mt-3 mx-auto"
+                data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-in-sine"
+                data-aos-anchor-placement="top-bottom">Get
                 in touch with us</a>
         </div>
     </section>
@@ -356,8 +377,9 @@
                         <li class="mb-2"><a href="./assets/checkout/checkout.html#payment-method"
                                 class="text-muted text-decoration-none small">Payment and Checkout</a></li>
                     </ul>
-                    <a href="./assets/signup-login/login/login.html#login"
-                        class="btn btn-sm btn-outline-secondary mt-2" data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-in-sine" data-aos-anchor-placement="top-bottom">Login</a>
+                    <a href="./assets/signup-login/login/login.html#login" class="btn btn-sm btn-outline-secondary mt-2"
+                        data-aos="zoom-out" data-aos-duration="1500" data-aos-easing="ease-in-sine"
+                        data-aos-anchor-placement="top-bottom">Login</a>
                 </div>
 
                 <hr class="text-muted">
