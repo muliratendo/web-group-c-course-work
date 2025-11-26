@@ -20,10 +20,188 @@
         window.SnipcartSettings = {
             publicApiKey: 'YzFjN2FmYzYtMTFjNi00MWFiLTg1MjgtZjA4OWNiMmZjN2JkNjM4OTk0NDA4MDkyMTEyNDMw',
             loadStrategy: 'on-user-interaction',
+            currency: "usd",
+            modalStyle: "side",
         };
-    
-        (()=>{var c,d;(d=(c=window.SnipcartSettings).version)!=null||(c.version="3.0");var s,S;(S=(s=window.SnipcartSettings).timeoutDuration)!=null||(s.timeoutDuration=2750);var l,p;(p=(l=window.SnipcartSettings).domain)!=null||(l.domain="cdn.snipcart.com");var w,u;(u=(w=window.SnipcartSettings).protocol)!=null||(w.protocol="https");var f=window.SnipcartSettings.version.includes("v3.0.0-ci")||window.SnipcartSettings.version!="3.0"&&window.SnipcartSettings.version.localeCompare("3.4.0",void 0,{numeric:!0,sensitivity:"base"})===-1,m=["focus","mouseover","touchmove","scroll","keydown"];window.LoadSnipcart=o;document.readyState==="loading"?document.addEventListener("DOMContentLoaded",r):r();function r(){window.SnipcartSettings.loadStrategy?window.SnipcartSettings.loadStrategy==="on-user-interaction"&&(m.forEach(t=>document.addEventListener(t,o)),setTimeout(o,window.SnipcartSettings.timeoutDuration)):o()}var a=!1;function o(){if(a)return;a=!0;let t=document.getElementsByTagName("head")[0],e=document.querySelector("#snipcart"),i=document.querySelector(`src[src^="${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}"][src$="snipcart.js"]`),n=document.querySelector(`link[href^="${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}"][href$="snipcart.css"]`);e||(e=document.createElement("div"),e.id="snipcart",e.setAttribute("hidden","true"),document.body.appendChild(e)),v(e),i||(i=document.createElement("script"),i.src=`${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}/themes/v${window.SnipcartSettings.version}/default/snipcart.js`,i.async=!0,t.appendChild(i)),n||(n=document.createElement("link"),n.rel="stylesheet",n.type="text/css",n.href=`${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}/themes/v${window.SnipcartSettings.version}/default/snipcart.css`,t.prepend(n)),m.forEach(g=>document.removeEventListener(g,o))}function v(t){!f||(t.dataset.apiKey=window.SnipcartSettings.publicApiKey,window.SnipcartSettings.addProductBehavior&&(t.dataset.configAddProductBehavior=window.SnipcartSettings.addProductBehavior),window.SnipcartSettings.modalStyle&&(t.dataset.configModalStyle=window.SnipcartSettings.modalStyle),window.SnipcartSettings.currency&&(t.dataset.currency=window.SnipcartSettings.currency),window.SnipcartSettings.templatesUrl&&(t.dataset.templatesUrl=window.SnipcartSettings.templatesUrl))}})();
+
+        (() => { var c, d; (d = (c = window.SnipcartSettings).version) != null || (c.version = "3.0"); var s, S; (S = (s = window.SnipcartSettings).timeoutDuration) != null || (s.timeoutDuration = 2750); var l, p; (p = (l = window.SnipcartSettings).domain) != null || (l.domain = "cdn.snipcart.com"); var w, u; (u = (w = window.SnipcartSettings).protocol) != null || (w.protocol = "https"); var f = window.SnipcartSettings.version.includes("v3.0.0-ci") || window.SnipcartSettings.version != "3.0" && window.SnipcartSettings.version.localeCompare("3.4.0", void 0, { numeric: !0, sensitivity: "base" }) === -1, m = ["focus", "mouseover", "touchmove", "scroll", "keydown"]; window.LoadSnipcart = o; document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", r) : r(); function r() { window.SnipcartSettings.loadStrategy ? window.SnipcartSettings.loadStrategy === "on-user-interaction" && (m.forEach(t => document.addEventListener(t, o)), setTimeout(o, window.SnipcartSettings.timeoutDuration)) : o() } var a = !1; function o() { if (a) return; a = !0; let t = document.getElementsByTagName("head")[0], e = document.querySelector("#snipcart"), i = document.querySelector(`src[src^="${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}"][src$="snipcart.js"]`), n = document.querySelector(`link[href^="${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}"][href$="snipcart.css"]`); e || (e = document.createElement("div"), e.id = "snipcart", e.setAttribute("hidden", "true"), document.body.appendChild(e)), v(e), i || (i = document.createElement("script"), i.src = `${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}/themes/v${window.SnipcartSettings.version}/default/snipcart.js`, i.async = !0, t.appendChild(i)), n || (n = document.createElement("link"), n.rel = "stylesheet", n.type = "text/css", n.href = `${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}/themes/v${window.SnipcartSettings.version}/default/snipcart.css`, t.prepend(n)), m.forEach(g => document.removeEventListener(g, o)) } function v(t) { !f || (t.dataset.apiKey = window.SnipcartSettings.publicApiKey, window.SnipcartSettings.addProductBehavior && (t.dataset.configAddProductBehavior = window.SnipcartSettings.addProductBehavior), window.SnipcartSettings.modalStyle && (t.dataset.configModalStyle = window.SnipcartSettings.modalStyle), window.SnipcartSettings.currency && (t.dataset.currency = window.SnipcartSettings.currency), window.SnipcartSettings.templatesUrl && (t.dataset.templatesUrl = window.SnipcartSettings.templatesUrl)) } })();
     </script>
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.min.css">
+    <style>
+        #snipcart {
+            /* ----------------- 
+        Colors
+    ----------------- */
+    --color-default: hsl(0, 0%, 0%);
+    --color-alt: #E9B48A;
+    --color-icon: #2A1713;
+    --color-success: hsl(144, 50%, 55%);
+    --color-error: hsl(6, 55%, 60%);
+
+    --color-link: #5C352C;
+    --color-link-hover: #956959;
+    --color-link-active: var(--color-link);
+    --color-link-focus: var(--color-link);
+
+    --color-input: var(--color-default);
+    --color-input-hover: var(--color-input);
+    --color-input-focus: var(--color-input);
+    --color-input-checked: var(--color-input);
+    --color-input-disabled: var(--color-alt);
+    --color-input-error: var(--color-error);
+    --color-inputLabel: var(--color-default);
+    --color-inputLabel-hover: var(--color-inputLabel);
+    --color-inputLabel-focus: var(--color-inputLabel);
+    --color-inputIcon: var(--color-alt);
+    --color-inputIcon-hover: var(--color-default);
+    --color-inputIcon-focus: var(--color-inputIcon);
+    --color-inputIcon-checked: var(--color-default);
+    --color-inputIcon-error: var(--color-error);
+    --color-inputPlaceholder: var(--color-alt);
+
+    --color-buttonPrimary: var(--color-default);
+    --color-buttonPrimary-hover: hsl(0, 0%, 100%);
+    --color-buttonPrimary-active: var(--color-buttonPrimary);
+    --color-buttonPrimary-focus: var(--color-buttonPrimary);
+    --color-buttonPrimary-disabled: var(--color-alt);
+    --color-buttonPrimary-success: var(--color-buttonPrimary);
+    --color-buttonPrimary-error: var(--color-buttonPrimary);
+
+    --color-buttonSecondary: var(--color-icon);
+    --color-buttonSecondary-hover: hsl(200, 90%, 50%);
+    --color-buttonSecondary-active: var(--color-buttonSecondary);
+    --color-buttonSecondary-focus: var(--color-buttonSecondary);
+    --color-buttonSecondary-disabled: hsl(210, 10%, 25%);
+    --color-buttonSecondary-success: var(--color-success);
+    --color-buttonSecondary-error: var(--color-error);
+
+    --color-buttonDanger: var(--color-error);
+    --color-buttonDanger-hover: hsl(6, 55%, 70%);
+    --color-buttonDanger-active: var(--color-buttonDanger);
+    --color-buttonDanger-focus: var(--color-buttonDanger);
+    --color-buttonDanger-disabled: hsl(210, 10%, 25%);
+    --color-buttonDanger-success: var(--color-default);
+    --color-buttonDanger-error: var(--color-default);
+
+    --color-badge: var(--color-link);
+    --color-badge-active: var(--color-link);
+    --color-badge-disabled: var(--color-alt);
+
+    /* ----------------- 
+        Border colors
+    ----------------- */
+    --borderColor-default: #5C352C;
+    --borderColor-error: hsl(6, 55%, 30%);
+
+    --borderColor-link: currentColor;
+    --borderColor-link-hover: currentColor;
+    --borderColor-link-active: currentColor;
+    --borderColor-link-focus: currentColor;
+
+    --borderColor-input: #956959;
+    --borderColor-input-hover: #2A1713;
+    --borderColor-input-focus: var(--borderColor-input-hover);
+    --borderColor-input-checked: var(--borderColor-input-hover);
+    --borderColor-input-disabled: hsl(210, 10%, 20%);
+    --borderColor-input-error: var(--borderColor-error);
+
+    --borderColor-buttonPrimary: #5C352C;
+    --borderColor-buttonPrimary-hover: transparent;
+    --borderColor-buttonPrimary-focus: transparent;
+    --borderColor-buttonPrimary-disabled: transparent;
+    --borderColor-buttonPrimary-success: transparent;
+    --borderColor-buttonPrimary-error: transparent;
+
+    --borderColor-buttonSecondary: transparent;
+    --borderColor-buttonSecondary-hover: transparent;
+    --borderColor-buttonSecondary-focus: transparent;
+    --borderColor-buttonSecondary-disabled: transparent;
+    --borderColor-buttonSecondary-success: transparent;
+    --borderColor-buttonSecondary-error: transparent;
+
+    --borderColor-badge: transparent;
+    --borderColor-badge-active: transparent;
+    --borderColor-badge-disabled: transparent;
+
+    /* ----------------- 
+        Background colors
+    ----------------- */
+    --bgColor-default: #E9B48A;
+    --bgColor-alt: #956959;
+    --bgColor-success: #198754;
+    --bgColor-error: #dc3545;
+    --bgColor-info: #0dcaf0;
+
+    --bgColor-modal: #956959;
+    --bgColor-modalVeil: #f1b584db;
+
+    --bgColor-link: none;
+    --bgColor-link-hover: none;
+    --bgColor-link-active: none;
+    --bgColor-link-focus: #2A1713;
+
+    --bgColor-input: #ffffff8b;
+    --bgColor-input-hover: var(--bgColor-input);
+    --bgColor-input-focus: #e8be9d;
+    --bgColor-input-checked: var(--borderColor-input-hover);
+    --bgColor-input-disabled: hsl(210, 10%, 14%);
+    --bgColor-input-error: var(--bgColor-input);
+    --bgColor-input-autofill: #ffffff8b;
+
+    --bgColor-buttonPrimary: #E9B48A;
+    --bgColor-buttonPrimary-hover: #5C352C;
+    --bgColor-buttonPrimary-active: var(--bgColor-buttonPrimary);
+    --bgColor-buttonPrimary-focus: var(--bgColor-buttonPrimary);
+    --bgColor-buttonPrimary-disabled: hsl(210, 10%, 25%);
+    --bgColor-buttonPrimary-success: #198754;
+    --bgColor-buttonPrimary-error: #dc3545;
+
+    --bgColor-buttonSecondary: var(--bgColor-default);
+    --bgColor-buttonSecondary-hover: #a17c6e;
+    --bgColor-buttonSecondary-active: var(--bgColor-buttonSecondary);
+    --bgColor-buttonSecondary-focus: var(--bgColor-buttonSecondary);
+    --bgColor-buttonSecondary-disabled: hsl(210, 10%, 9%);
+    --bgColor-buttonSecondary-success: var(--bgColor-success);
+    --bgColor-buttonSecondary-error: var(--bgColor-error);
+
+    --bgColor-buttonDanger: var(--bgColor-error);
+    --bgColor-buttonDanger-hover: #d80a1f;
+    --bgColor-buttonDanger-active: var(--bgColor-buttonDanger);
+    --bgColor-buttonDanger-focus: var(--bgColor-buttonDanger);
+    --bgColor-buttonDanger-disabled: hsl(210, 10%, 9%);
+    --bgColor-buttonDanger-success: #198754;
+    --bgColor-buttonDanger-error: #dc3545;
+
+    --bgColor-badge: #2A1713;
+    --bgColor-badge-active: #956959;
+    --bgColor-badge-disabled: #E9B48A;
+
+    /* ----------------- 
+        Shadows
+    ----------------- */
+
+    --shadow-default: 0px 20px 24px -20px hsla(0, 0%, 0%, .5);
+    --shadow-tooltip: 0px 8px 16px #5C352C;
+
+    --shadow-link-focus: 0px 6px 4px -3px #E9B48A;
+
+    --shadow-input-hover: none;
+    --shadow-input-focus: 0px 5px 10px -3px #E9B48A;
+    --shadow-input-checked: none;
+
+    --shadow-buttonPrimary-hover: 0px 10px 4px -8px #2A1713;
+    --shadow-buttonPrimary-active: none;
+    --shadow-buttonPrimary-focus: 0px 0px 6px 2px #2a1713bd;
+
+    --shadow-buttonSecondary-hover: 0px 10px 4px -8px hsla(0, 0%, 0%, .2);
+    --shadow-buttonSecondary-active: none;
+    --shadow-buttonSecondary-focus: 0px 0px 6px 2px #5C352C;
+
+    --shadow-buttonDanger-hover: 0px 10px 4px -8px hsla(0, 0%, 0%, .25);
+    --shadow-buttonDanger-active: none;
+    --shadow-buttonDanger-focus: 0px 0px 6px 2px hsla(6, 55%, 60%);
+        }
+    </style>
 </head>
 
 <body class="bg-dark">
@@ -371,8 +549,7 @@
                                                         person</small> </p>
                                                 <button class="btn btn-warning snipcart-add-item" data-aos="zoom-out"
                                                     data-aos-duration="1500" data-aos-easing="ease-in-sine"
-                                                    data-aos-anchor-placement="top-bottom" 
-                                                    data-item-id="Kenya"
+                                                    data-aos-anchor-placement="top-bottom" data-item-id="Kenya"
                                                     data-item-price="1999"
                                                     data-item-description="Enjoy the journey of a Kenya trip"
                                                     data-item-image="https://muliratendo.github.io/web-group-c-course-work/assets/images/services/beach.jpg"
